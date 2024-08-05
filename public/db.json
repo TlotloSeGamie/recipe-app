@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name":"milktart (melktert)",
+        "description":"This milk tart recipe is from my South African grandmother, Ouma. Her legendary milk tart is lip-smacking, and the recipe is a real winner. It's a traditional South African tart that is easy to prepare and can be served hot or cold.",
+        "image":"milktart",
+        "ingredients":[
+                        "cooking spray",
+                        "1 cup white sugar",
+                        "3 tablespoons butter, melted",
+                        "3 egg yolks",
+                        "1 cup cake flour",
+                        "1 teaspoon baking powder",
+                        "¼ teaspoon salt",
+                        "4 cups milk",
+                        "1 teaspoon vanilla extract",
+                        "3 egg white",
+                        "1 tablespoon cinnamon sugar"]
+    }
+]
