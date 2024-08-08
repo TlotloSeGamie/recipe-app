@@ -1,8 +1,9 @@
 import React from 'react';
-
 import './App.css';
 import Recipes from './recipes';
 import Navbar from './navbar';
+import Home from './home';
+import Login from './login';
 
 function App() {
   return (
@@ -14,3 +15,4 @@ function App() {
 }
 
 export default App;
+

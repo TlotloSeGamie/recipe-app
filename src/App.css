@@ -1,63 +1,348 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.navbar-logo{
-  display: flex;
+.navbar {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo{
-  width: 10%;
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 50px;
   border-radius: 50%;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #333;
-  color: #fff;
-}
-
-.navbar-links {
-  list-style: none;
-  display: flex;
+.navbar-top h1 {
   margin: 0;
-  padding: 0;
+  font-size: 1.5rem;
+  color: #fff5f5;
+  flex-grow: 1;
+  text-align: center;
 }
 
-.navbar-links li {
-  margin-left: 1rem;
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #555;
+  border-radius: 14px;
+  padding: 5px;
+  margin-left: 10px; 
+  margin-top: 7px;
 }
 
-.navbar-links a {
-  text-decoration: none;
+.search-input {
+  flex-grow: 1;
+  border: none;
+  background: none;
   color: #fff;
-  transition: color 0.3s ease;
+  padding: 5px;
+  outline: none;
 }
 
-.navbar-links a:hover {
-  color: #ddd;
+.search-icon {
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-.ingredients{
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 2px 5px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.login-link i {
+  margin-right: 5px;
+}
+
+.login-link:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  color: #fff7f7;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #444;
+  padding: 20px;
+  z-index: 1000; /* High z-index */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu.open {
+  display: block;
+  transform: translateX(0);
+}
+
+.menu-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.menu-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff5f5;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.menu-logo {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.menu i {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.menu ul li {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #007bff;
+}
+
+.bordered-box {
+  border: 1px solid #555; 
+  margin-bottom: 10px; 
+}
+
+.menu .login-link {
+  border-width: 1px; 
+  margin-top: 10px; 
+  width: fit-content; 
+  display: flex; 
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.menu .login-link i {
+  color: #007bff;
+  margin-right: 5px; 
+  transition: color 0.3s;
+}
+
+.menu .login-link:hover{
+  background-color: #007bff;
+  color: #fff;
+}
+
+.menu .login-link i:hover{
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  color: #007bff;
+  gap: 10px;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.social i{
+  display: flex;
+  color: #fdfeff;
+  gap: 40px;
+  margin: 0 7px;
+  border-radius: 20% 30%;
+  box-shadow: inset 0 0 10px #eaedf0, 0 0 10px #ffffff;
+  transition: 0.3s ease;
+}
+
+.social i:hover{
+  transform: scale(1.2)translateY(-10px);
+  color: #007bff;
+  border: 2px solid #ffffff;
+}
+
+.social i.ri-facebook-fill:hover {
+  color: #1877f2;
+  background-color: #eaedf0;
+  border: 2px solid #1877f2;
+}
+
+.social i.ri-twitter-x-fill:hover {
+  color: #000000;
+  background-color: #eaedf0;
+  border: 2px solid #000000;
+}
+
+.social i.ri-instagram-fill:hover {
+  color: #e1306c;
+  background-color: #eaedf0;
+  border: 2px solid #e1306c;
+}
+
+.social i.ri-pinterest-fill:hover {
+  color: #bd081c;
+  background-color: #eaedf0;
+  border: 2px solid #bd081c;
+}
+
+.social i.ri-youtube-fill:hover {
+  color: #ff0000;
+  background-color: #eaedf0;
+  border: 2px solid #ff0000;
+}
+
+.footer{
+  padding-top: 70px;
+}
+
+.socials {
+  display: flex;
+  color: #007bff;
+  gap: 10px;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.socials i{
+  display: flex;
+  color: #007bff;
+  gap: 40px;
+  margin: 0 7px;
+  border-radius: 20% 30%;
+  box-shadow: inset 0 0 10px #007bff, 0 0 16px #007bff;
+  transition: 0.3s ease;
+}
+
+.socials i:hover{
+  transform: scale(1.2)translateY(-10px);
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.home-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.food{
+  width: 140px;
+}
+
+.para {
+  height: 220px;
   position: relative;
-  padding-left: 20px;
-  margin-bottom: 5px;
+  width: 310px;
+  color: #000000;
+  margin: 0;
 }
 
-.ingredient-item {
-  margin-bottom: 8px; 
+.para p{
+  font-size: 15px;
+  font-style: italic;
+  height: 100%;
+  line-height: 1.2;
+  padding: 0;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
 }
 
-.ingredient-item::before{
-  content: '•';
-  position: absolute;
+.para::before{
+  content: "";
+  float: left;
+  height: 100%;
+  width: 10px;
+}
+
+.recipe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff7ff;
+  margin-bottom: 10px;
+}
+
+.recipe-meal {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  background-color: #dbeaf8;
+  border: #007bff;
+  border-radius: 5px solid #007bff;
+}
+
+.recipe-img1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 10px;
+  margin-top: 10px;
+}
+
+.avotext{
+  font-style: inherit;
+  font: bolder;
+}
+
+.avo {
+  width: 50%;
+  border-radius: 12px;
+}
+
+.ingred {
   left: 0;
-  color: slateblue;
-  size: 6px;
+  top: 0;
+  margin-left: 0;
 }

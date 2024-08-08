@@ -1,0 +1,52 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import avo1 from "../src/images/AVO SANDW/Screenshot 2024-08-06 222339.jpg";
+import avo2 from "../src/images/AVO SANDW/Screenshot 2024-08-06 224028.jpg";
+import avo3 from "../src/images/AVO SANDW/Screenshot 2024-08-06 224204.jpg";
+import avo4 from "../src/images/AVO SANDW/avo sand.jpg";
+
+const Recipes = () => {
+    const [recipeItems, setRecipeItems] = useState([]);
+
+    useEffect(() => {
+        axios.get('/db.json')
+        .then(Response => setRecipeItems(Response.data))
+        .catch(error => console.error('Error fetching data:', error));
+    }, []);
+
+    return (
+        <div className="container">
+            <div className="meal">
+                {Array.isArray(recipeItems) && recipeItems.map(item => (
+                    <div key={item.id} className="recipe-item">
+                        <div className="recipe-images">
+                            <img src={avo1} alt={item.name} className="recipe-img" />
+                            <img src={avo2} alt={item.name} className="recipe-img" />
+                            <img src={avo3} alt={item.name} className="recipe-img" />
+                            <img src={avo4} alt={item.name} className="recipe-img" />
+                            <img src={item.img} />
+                            </div>
+                        <h3 className="recipe-name">{item.name}</h3>
+                        <p className="recipe-description">{item.description}</p>
+                        <h4>Ingredients</h4>
+                        <ul>
+                            {item.ingredients.map((ingredient, index) => (
+                                <li key={index}>{ingredient}</li>
+                            ))}
+                        </ul>
+                        <div className="recipe-directions">
+                            <h4>Directions:</h4>
+                            <ol>
+                                {item.Directions.map((direction, index) => (
+                                    <li key={index}>{direction}</li>
+                                ))}
+                            </ol>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+export default Recipes;

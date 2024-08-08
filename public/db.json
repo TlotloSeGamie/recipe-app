@@ -1,20 +1,251 @@
 [
     {
-        "id":1,
-        "name":"milktart (melktert)",
-        "description":"This milk tart recipe is from my South African grandmother, Ouma. Her legendary milk tart is lip-smacking, and the recipe is a real winner. It's a traditional South African tart that is easy to prepare and can be served hot or cold.",
-        "image":"milktart",
+        "id": 1,
+        "name": "Avocado Breakfast Sandwich",
+        "description": "Make this egg and avocado sandwich for a delicious restaurant-style breakfast at home! It's quick, easy, and delicious. The sliced avocado is what makes this sandwich pop and gives it a unique flavor. It is chock-full of protein, as well, so this sandwich will keep you full until lunchtime.",
+        "img":"https://www.allrecipes.com/thmb/MZUW_0Ni_5meg_r5LJlr7E0S1vY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/4520479-avocado-breakfast-sandwich-Buckwheat-Queen-1x1-1-0c41845d9017421a86e742a0d19302d2.jpg",
+        "ingredients": [
+            "1 tablespoon olive oil",
+            "2 large eggs",
+            "salt and ground black pepper to taste",
+            "1 tablespoon butter, softened",
+            "2 slices Italian bread",
+            "1 ounce Swiss cheese, sliced",
+            "1 ounce Cheddar cheese, sliced",
+            "½ ripe avocado, sliced"
+        ],
+        "Directions": [
+            " Gather the ingredients.",
+            " Heat olive oil in a skillet over medium heat. Crack eggs into skillet; cook for 1 to 2 minutes. Flip and cook egg until done, 2 to 5 minutes more. Transfer eggs to a plate and season with salt and pepper.",
+            " Spread butter onto 1 side of each bread slice. Heat a skillet over medium heat. Lay bread slices in the hot skillet, butter-side down. Quickly layer Swiss cheese, 1 fried egg, Cheddar cheese, 1 fried egg, avocado, and remaining bread slice, butter-side up.",
+            " Carefully flip sandwich to grill other side until golden brown, 3 to 4 minutes.",
+            " Remove sandwich from skillet and cut in half."
+        ]
+    },
+
+    {
+        "id": 2,
+        "name":"Philly Cheesesteak",
+        "description":"This Philly cheesesteak is made with sirloin sliced into strips and seasoned with a delicious blend of herbs and spices for a flavorsome sandwich. Sometimes I toast the hoagie roll before topping it with the steak, caramelized onions, peppers, and cheese.",
+        "img":"https://www.allrecipes.com/thmb/buMw49j1-lQ3WsqjzeNUanihYv8=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(3002x1545:3004x1547):format(webp)/AR-36621-philly-steak-sandwich-DDMFS-4x3-0375c25e8e554626a87131ee6f063655.jpg",
         "ingredients":[
-                        "cooking spray",
-                        "1 cup white sugar",
-                        "3 tablespoons butter, melted",
-                        "3 egg yolks",
-                        "1 cup cake flour",
-                        "1 teaspoon baking powder",
-                        "¼ teaspoon salt",
-                        "4 cups milk",
-                        "1 teaspoon vanilla extract",
-                        "3 egg white",
-                        "1 tablespoon cinnamon sugar"]
+            "½ teaspoon salt",
+            "½ teaspoon black pepper",
+            "½ teaspoon paprika",
+            "½ teaspoon chili powder",
+            "½ teaspoon onion powder",
+            "½ teaspoon garlic powder",
+            "½ teaspoon dried thyme",
+            "½ teaspoon dried marjoram",
+            "½ teaspoon dried basil",
+            "1 pound beef sirloin, cut into thin 2 inch strips",
+            "3 tablespoons vegetable oil",
+            "1 onion, sliced",
+            "1 green bell pepper, julienned",
+            "3 ounces Swiss cheese, thinly sliced",
+            "4 hoagie rolls, split lengthwise"
+        ],
+        "Directions":[
+            "Gather all ingredients.",
+            "Mix salt, pepper, paprika, chili powder, onion powder, garlic powder, thyme, marjoram, and basil together in a small bowl.",
+            "Place steak in a large bowl; sprinkle seasoning mixture over top and stir to coat.",
+            "Heat 1/2 of the oil in a skillet over medium-high heat. Add steak; cook and stir to the desired doneness. Transfer cooked steak to a plate.",
+            "Heat the remaining oil in the skillet. Add onion and green pepper; cook and stir until tender and caramelized.",
+            "Preheat the oven on the broiler setting. Divide cooked beef between the bottoms of 4 rolls.",
+            "Layer with onion and green pepper.",
+            "Top with sliced cheese. Place on a cookie sheet.",
+            "Broil in the preheated oven until cheese is melted.",
+            "Cover with tops of rolls and serve."
+        ]
+    },
+
+    {
+        "id": 3,
+        "name":"Easy Steak Sandwich",
+        "img":"https://www.allrecipes.com/thmb/gNFkLwUKscexhybvubgd5CQ9x6c=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/86219-EasySteakSandwich-MFS-2X3-0133-1499451a17d64e8ca76c8349423ba00e.jpg",
+        "description":"This steak sandwich recipe is as good as the takeout sub shops of Southeastern Massachusetts! I think this is about as close as you can get at home. Freezing the steak the day before makes it easy to cut into very thin slices.",
+        "ingredients":[
+            "2 tablespoons butter, divided",
+            "¼ medium onion, sliced",
+            "4 large fresh mushrooms, sliced",
+            "¼ green bell pepper, sliced into long strips",
+            "1 (1/2 pound) well-marbled beef steak of any type, sliced as thinly as possible",
+            "3 tablespoons chopped pickled hot peppers",
+            "1 teaspoon hot pepper sauce",
+            "salt and pepper to taste",
+            "2 slices sharp Cheddar cheese",
+            "⅓ French baguette, cut in half lengthwise"
+        ],
+        "Directions":[
+            "Gather all ingredients.",
+            "Melt 1 tablespoon butter in a large skillet over medium heat. Add onion; cook and stir until just tender, about 2 minutes. Push onion to sides of the pan; add mushrooms and cook until softened. Stir in bell pepper and cook just until tender, about 3 minutes. Remove vegetables from the pan with a slotted spoon; set aside.",
+            "Heat remaining 1 tablespoon butter in the same skillet. Add steak and pickled hot peppers; season with hot pepper sauce, salt, and pepper. Cook and stir until steak is mostly browned, 2 to 3 minutes. Add vegetable mixture back into the pan; stir until heated through.",
+            "Turn off the heat; place cheese on top of steak and vegetable mixture so it can melt.",
+            "Scoop mixture into sliced baguette; pour some of the juices on top."
+        ]
+    },
+
+    {
+        "id": 4,
+        "name":"Chicken Parm Sub Sandwiches",
+        "img":"https://www.allrecipes.com/thmb/k9FajrrgFWlLlJUgBIXlFSRCckA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Chicken-Parm-Sub-4x3-1-dcbb0d4cc82f492f992a05393a9431cc.jpg",
+        "description":"These chicken Parm subs are easy to make at home. In the time it takes to pick up takeout, you can have these warm crispy chicken sandwiches ready for your family to enjoy!",
+        "ingredients":[
+            "cooking spray",
+            "4 frozen breaded chicken breast fillets",
+            "½ cup freshly grated Parmesan cheese",
+            "1 (16 ounce) package frozen garlic bread, thawed",
+            "1 cup tomato sauce or marinara sauce",
+            "4 slices provolone cheese",
+            "12 fresh basil leaves, or to taste",
+            "aluminum foil"
+        ],
+        "Directions":[
+            "Preheat the oven to 425 degrees F (220 degrees C). Spray a baking pan with vegetable oil spray.",
+            "Place frozen chicken fillets on the prepared pan and bake in the preheated oven for 10 to 12 minutes. Turn chicken, sprinkle 2 tablespoons Parmesan cheese on each fillet, and bake until crispy, an additional 10 to 12 minutes.",
+            "Slice garlic bread into 4 equal portions. Open each portion and place garlic-side up on a baking sheet. Warm garlic bread in the oven about 5 minutes.",
+            "To assemble the sandwiches, place a chicken fillet on a piece of garlic bread, spoon 1/4 cup tomato sauce or marinara sauce on top of the chicken, and lay a slice of provolone cheese on top of the sauce. Place 3 basil leaves, or more to taste, on each sandwich, and top with the other half.",
+            "Wrap each sandwich in foil and return to the oven until the cheese is melted, 5 to 8 minutes. Unwrap and serve warm."
+        ]
+    },
+
+    {
+        "id": 5,
+        "name":"Chicken Philly",
+        "img":"https://www.allrecipes.com/thmb/_ulE4tR2Sqj2x_tkrxHbI4qxMAo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8970370-82c9aa85229f472bad879e01b9b3a334.jpg",
+        "description":"Tender, seasoned chicken breast loaded with veggies and gooey cheese on a toasted bun.",
+        "ingredients":[
+            "2 (4 ounce) skinless, boneless chicken breasts, partially frozen",
+            "1 ½ tablespoons Cajun seasoning",
+            "3 tablespoons clarified butter",
+            "½ medium onion, sliced",
+            "½ medium green bell pepper, sliced",
+            "1 cup sliced white mushrooms",
+            "1 ½ cups shredded pepper Jack cheese",
+            "½ cup chopped banana peppers",
+            "2 tablespoons mayonnaise, or to taste",
+            "2 (6 inch) submarine rolls, split"
+        ],
+        "Directions":[
+            "Cut each chicken breast into thin, almost deli-style slices with a meat slicer or very sharp knife. Toss with Cajun seasoning and let rest to absorb the seasoning and thaw, 1 to 2 hours.",
+            "Preheat the oven to 350 degrees F (175 degrees C). Line a baking sheet with foil.",
+            "Melt clarified butter in a skillet over medium heat. Add onion and green pepper; saute for 2 to 3 minutes. Add chicken and mushrooms. Use a fork or spatula to break apart the chicken as it cooks-you want that authentic shredded/pulled texture. Cook until chicken is very nearly done, about 8 minutes.",
+            "Add pepper Jack cheese and banana peppers. Toss and stir until cheese is well incorporated, melted, and gooey.",
+            "Spread mayonnaise on the insides of the rolls, then load them up with the meat-cheese mixture and transfer to the prepared baking sheet.",
+            "Toast in the preheated oven until cheese is slightly brown and rolls are crisp and toasted, about 3 minutes. Serve immediately."
+        ]   
+    },
+
+    {
+        "id": 6,
+        "name":"BBQ Pulled Chicken Sandwiches",
+        "img":"https://www.allrecipes.com/thmb/IYy5vdV6R6VxiDuGpiYIussR1mw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8940574-703ee16020b24a06a03d005bb38f7ba4.jpg",
+        "description":"This is an amazing recipe! There's nothing better than BBQ pulled chicken sandwiches!",
+        "ingredients":[
+            "2 pounds skinless, boneless chicken breast halves",
+            "1 small onion, roughly chopped",
+            "5 cloves garlic",
+            "1 ½ cups barbeque sauce (such as KC Masterpiece® Original)",
+            "½ cup apple cider vinegar",
+            "salt and ground black pepper to taste",
+            "8 large sesame seed sandwich buns",
+            "8 slices mozzarella cheese"
+        ],
+        "Directions":[
+            "Place chicken into the bottom of a slow cooker and cover with water. Cook on High until it is no longer pink in the center and falls apart when pulled, about 4 hours.",
+            "Puree onion and garlic in the bowl of a food processor until finely minced.",
+            "Puree onion and garlic in the bowl of a food processor until finely minced.",
+            "Return chicken to the slow cooker. Add pureed onion-garlic mixture, barbeque sauce, vinegar, salt, and pepper. Mix well and cook on High until heated through, about 10 minutes.",
+            "Serve on buns with mozzarella cheese."
+        ]
+    },
+
+    {
+        "id": 7,
+        "name":"Hot Buffalo Chicken, Bacon, and Cheese Sandwich",
+        "img":"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F438928.jpg&q=60&c=sc&poi=auto&orient=true&h=512",
+        "description":"This is actually a LARGE sandwich using a loaf of crispy Italian bread. Great served as a meal, cut into slices as an appetizer or separate onto individual rolls for a quick dinner or lunch.",
+        "ingredients":[
+            "6 slices bacon",
+            "½ cup mayonnaise",
+            "¼ cup sour cream",
+            "2 tablespoons hot buffalo wing sauce",
+            "1 loaf Italian bread, cut in half lengthwise",
+            "3 cups shredded meat from a rotisserie chicken",
+            "8 slices pepperjack cheese",
+            "¼ cup roasted red bell peppers, drained and sliced (Optional)"
+        ],
+        "Directions":[
+            "Preheat an oven to 325 degrees F (165 degrees C).",
+            "Place the bacon in a large, deep skillet; cook over medium-high heat, turning occasionally, until evenly browned. Drain the bacon slices on a paper towel-lined plate.",
+            "Combine the mayonnaise, sour cream, and hot sauce in a small bowl. Spread both halves of the bread with the mayonnaise mixture. Place chicken on bottom half of bread; layer bacon and cheese on top of chicken. Fold the top half of the bread over the bottom, and wrap with foil.",
+            "Bake for 20 to 25 minutes. Add a layer of red pepper slices on top of the bacon and cheese, if desired. Cut into slices, and serve."
+        ]
+    },
+
+    {
+        "id": 8,
+        "name":"Chicken Pesto Paninis",
+        "img":"https://www.allrecipes.com/thmb/0zsxjSXz54m6EzSigegJ_dd_PU0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/956156-chicken-pesto-paninis-JessMcKale90-1x1-1-c637561b2e25472d91c827285899372d.jpg",
+        "description":"A delicious mix of chicken, pesto, veggies, and cheese all melted together on flavorful focaccia bread. Simple, fast, and very tasty - a nice change from normal sandwiches.",
+        "ingredients":[
+            "1 focaccia bread, quartered,",
+            "½ cup prepared basil pesto",
+            "1 cup diced cooked chicken",
+            "½ cup diced green bell pepper",
+            "¼ cup diced red onion",
+            "1 cup shredded Monterey Jack cheese"
+        ],
+        "Directions":[
+            "Slice each quarter of focaccia bread in half horizontally. Spread each half with pesto. Layer bottom halves with equal amounts chicken, bell pepper, onion, and cheese. Top with remaining focaccia halves, forming 4 sandwiches.",
+            "Grill paninis 5 minutes in the preheated grill, or until focaccia bread is golden brown and cheese is melted."
+        ]
+    },
+
+    {
+        "id": 9,
+        "name":"Ultimate Steak Sandwich",
+        "img":"data:image/jpeg;base64,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",
+        "description":"Make the ultimate steak sandwich with tender and juicy steak and sauteed onions served on a toasted hard roll with garlic-Parmesan mayonnaise, provolone cheese and Italian seasoning. Don't forget to roll up your sleeves!",
+        "ingredients":[
+            "4 hard rolls, split",
+            "½ cup mayonnaise",
+            "3 cloves garlic, minced",
+            "1 tablespoon Parmesan cheese",
+            "3 tablespoons olive oil",
+            "2 pounds round steak, thinly sliced",
+            "1 large onion, sliced and quartered",
+            "1 pinch coarse sea salt",
+            "½ teaspoon Worcestershire sauce",
+            "⅛ teaspoon liquid smoke",
+            "8 (1 ounce) slices provolone cheese",
+            "½ teaspoon Italian seasoning"
+        ],
+        "Directions":[
+            "Preheat an oven to 500 degrees F (260 degrees C). Split the rolls open and toast them on a baking sheet in the oven while it is preheating. Mix together the mayonnaise, garlic, and Parmesan cheese in a small bowl. Refrigerate until ready to use. Remove the rolls from the oven when toasted as desired.",
+            "Heat olive oil in a large skillet over medium-high heat. Carefully place the sliced steak and onions in the pan and season with sea salt, Worcestershire sauce, and liquid smoke. Cook and stir until the steak is browned and the onion is tender, about 10 minutes.",
+            "Generously spread the prepared garlic-Parmesan mayonnaise on both halves of the toasted rolls. Divide the steak and onion mixture evenly among the bottom halves of the rolls, piling them high. Top each with 2 slices provolone cheese and sprinkle with Italian seasoning. Place the tops on the sandwiches.",
+            "Bake the sandwiches on a baking sheet in the preheated oven until the cheese is melted, about 5 minutes."
+        ]
+    },
+
+    {
+        "id": 10,
+        "name":"Eaton's Easy Pulled Pork",
+        "img":"https://www.allrecipes.com/thmb/QDsleOSPncUjamkifiNeVH35oqg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/2268768-e657ad39647e42c4bbd31a9e04f36456.jpg",
+        "description":"This is one of the easiest pulled pork recipes I've made. Since my husband was from 'south of the Mason-Dixon line' and raved about pulled pork in Virginia/South Carolina, I had a tough job ahead of me, but he loved it (!) so I guess I passed the test.",
+        "ingredients":[
+            "1 onion, thinly sliced",
+            "4 ½ pounds bone-in pork loin end roast",
+            "salt and ground black pepper to taste",
+            "¾ cup cider vinegar",
+            "¼ cup water",
+            "½ (18 ounce) bottle hickory brown sugar barbeque sauce",
+            "3 tablespoons brown sugar, or to taste"
+        ],
+        "Directions":[
+            "Arrange onion slices in the bottom of a slow cooker. Season pork with salt and pepper and place over onion. Add vinegar and water.",
+            "Cook pork on Low for 8 hours. Transfer pork to a platter and shred with two forks. Remove and discard about half the pork juices from slow cooker and stir in shredded pork, barbeque sauce, and brown sugar."
+        ]
     }
 ]

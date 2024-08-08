@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f8ff, #d0e8f2);
+}
+
+.navbar-top .search-container {
+    margin-left: 10px;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    background: none;
+    color: #fff;
+    padding: 5px;
+    outline: none;
+}
+
+[
+    {
+        "id":1,
+        "name":"milktart (melktert)",
+        "description":"This milk tart recipe is from my South African grandmother, Ouma. Her legendary milk tart is lip-smacking, and the recipe is a real winner. It's a traditional South African tart that is easy to prepare and can be served hot or cold.",
+        "image":"milktart",
+        "ingredients":[
+                        "cooking spray",
+                        "1 cup white sugar",
+                        "3 tablespoons butter, melted",
+                        "3 egg yolks",
+                        "1 cup cake flour",
+                        "1 teaspoon baking powder",
+                        "¼ teaspoon salt",
+                        "4 cups milk",
+                        "1 teaspoon vanilla extract",
+                        "3 egg white",
+                        "1 tablespoon cinnamon sugar"]
+    }
+]
+
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import milktart from "../src/images/desserts/melktert.jpg"
+
+const Recipes = () => {
+    const [recipeItems,setRecipeItems] = useState([])
+
+    useEffect(() => {
+        axios.get('/db.json')
+           .then(Response => setRecipeItems(Response.data))
+           .catch(error => console.error('Error fetching data:',error));
+    },[]);
+    return(
+        <div className="container">
+            <div className="meal">
+                {recipeItems.map(item => (
+                    <div key={item.id} className="recipe-item">
+                        <p>{item.description}</p>
+                        <img src={milktart}  />
+                        <h3>{item.name}</h3>
+                        <div className="ingredients">
+                            <h4><u>ingredients</u></h4>
+                            {item.ingredients.map((ingredient, index) => (
+                                <p key={index} className="ingredient-item">{ingredient}</p>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
+
+export default Recipes;
+
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .para {
+    color: green;
+    position: relative;
+    border: 5px solid #007bff;
+    border-radius: 50%;
+  }
+  .para::before{
+        content: "";
+    float: left;
+    height: 100%;
+    width: 10px;
+    shape-outside: polygon(
+        0 0,
+        98% 0,
+        50% 6%,
+        23.4% 17.3%,
+        6% 32.6%,
+        0 50%,
+        6% 65.6%,
+        23.4% 82.72%,
+        98% 100%,
+        0 100%,
+      );
+      shape-margin: 10%;
+      background: radial-gradient(
+        ellipse at center,
+        rgba(210, 20, 20, 1) 0%,
+        rgba(210, 20, 20, 1) 70%,
+        rgba(210, 20, 20, 1) 70.3%,
+      );
+  }
+
+
+
+  
