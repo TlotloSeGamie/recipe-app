@@ -7,7 +7,7 @@ const Recipes = () => {
     const [selectedRecipe, setSelectedRecipe] = useState(null);
 
     useEffect(() => {
-        axios.get('/db.json')
+        axios.get('/breakfast.json')
             .then(response => setRecipeItems(response.data))
             .catch(error => console.error('Error fetching data:', error));
     }, []);

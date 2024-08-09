@@ -247,5 +247,59 @@
             "Arrange onion slices in the bottom of a slow cooker. Season pork with salt and pepper and place over onion. Add vinegar and water.",
             "Cook pork on Low for 8 hours. Transfer pork to a platter and shred with two forks. Remove and discard about half the pork juices from slow cooker and stir in shredded pork, barbeque sauce, and brown sugar."
         ]
+    },
+
+    {
+        "id": 11,
+        "name":"Roast Beef Sliders",
+        "img":"https://www.allrecipes.com/thmb/Wm4DT6FSa4osRmPHsFzUBk2z09Q=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8398328-a0d48547019045359613a8a22d8d580d.jpg",
+        "description":"A handful of ingredients is all it takes to have a fast appetizer ready for game day.",
+        "ingredients":[
+            "1 serving cooking spray",
+            "1 pound thinly sliced deli roast beef",
+            "1 (8 ounce) package thinly sliced provolone cheese",
+            "1 tablespoon vegetable oil",
+            "1 small onion, diced",
+            "1 green bell pepper, diced",
+            "½ cup sliced mushrooms",
+            "2 tablespoons unsalted butter, melted",
+            "¼ teaspoon garlic powder",
+            "¼ teaspoon adobo seasoning",
+            "¼ teaspoon Italian seasoning",
+            "12 slider buns"
+        ],
+        "Directions":[
+            "Preheat the oven to 350 degrees F (175 degrees C). Spray a 9x13-inch baking dish with cooking spray.",
+            "Slice the rolls in half vertically, leaving each roll attached as a sheet. Peel off the top layer and set aside; place the bottoms of the rolls in the prepared dish. Layer roast beef and cheese across the rolls.",
+            "Heat oil in a a small skillet over medium-high heat. Cook onion, bell pepper, and mushrooms until soft, about 5 minutes. Spread pepper mixture over cheese and beef. Place the tops of the rolls back on.",
+            "Mix melted butter, garlic powder, adobo seasoning, and Italian seasoning together. Brush seasoned butter on the tops of the rolls, pouring any extra over the sides.",
+            "Bake in the preheated oven until cheese starts to melt, about 15 minutes. Separate each roll into a sandwich using a serrated knife. Serve hot."
+        ]
+    },
+
+    {
+        "id": 12,
+        "name":"The Ultimate Turkey Sandwich",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8fNUQbLSziR7wTyOca1bGeprsmDAMYcAs5Q&s",
+        "description":"This Ultimate Turkey Sandwich is piled high with turkey, cheddar, avocado, and more.  It’s a healthy lunch idea that’s filled with protein and so satisfying!",
+        "ingredients":[
+            "2 slices of sourdough bread (or your preferred bread)",
+            "4-6 slices of roasted turkey breast",
+            "2 slices of Swiss cheese (or cheddar/provolone)",
+            "1 leaf of lettuce (or a small handful of spinach)",
+            "2 slices of ripe tomato",
+            "1/2 avocado, sliced (or mashed)",
+            "2 slices of cooked bacon (optional)",
+            "1-2 tablespoons of mayonnaise",
+            "1-2 teaspoons of mustard (optional)",
+            "1-2 teaspoons of cranberry sauce (optional)",
+            "1 slice of red onion (optional)"
+        ],
+        "Directions":[
+            "Toast the slices of bread until golden brown if desired.Cook the bacon if using, and drain on paper towels.Slice the avocado, tomato, and red onion.",
+            "Spread mayonnaise on one or both slices of bread. Add mustard or aioli if desired.Layer the turkey slices evenly over the bread.",
+            "Place the cheese slices on top of the turkey.Add the lettuce (or spinach), followed by the tomato slices.Place the avocado slices on top of the tomato.If using bacon, add the crispy bacon slices on top of the avocado.Add any additional toppings like cranberry sauce or red onion.",
+            "Top with the second slice of bread.Press the sandwich down slightly to help hold everything together.Slice the sandwich in half, if desired, and serve immediately."
+        ]
     }
 ]
