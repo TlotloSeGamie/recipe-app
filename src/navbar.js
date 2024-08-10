@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from '../src/images/logo.png';
 import 'remixicon/fonts/remixicon.css';
 
-const Navbar = () => {
+const Navbar = ({ onMenuClick }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -28,15 +28,11 @@ const Navbar = () => {
           <i className="ri-search-line search-icon"></i>
         </div>
         <ul>
-          <li><a href="#">BREAKFAST</a></li>
-          <li><a href="#">LUNCH</a></li>
-          <li><a href="#">DINNER</a></li>
-          <li><a href="#">SANDWICH</a></li>
+          <li><a href="#" onClick={() => {onMenuClick('breakfast'); toggleMenu();}}>BREAKFAST</a></li>
+          <li><a href="#" onClick={() => {onMenuClick('lunch'); toggleMenu();}}>LUNCH</a></li>
+          <li><a href="#" onClick={() => {onMenuClick('dinner'); toggleMenu();}}>DINNER</a></li>
           <li><a href="#">SALADS</a></li>
-          <li><a href="#">DESSERTS</a></li>
-          <li><a href="#">CAKES</a></li>
-          <li><a href="#">KITCHEN TIPS</a></li>
-          <li><a href="#">ABOUT US</a></li>
+          {/* Add more items as needed */}
         </ul>
         <div className="bordered-box"></div>
         <a href="#" className="login-link"><i className="ri-user-3-line"></i>Login</a>

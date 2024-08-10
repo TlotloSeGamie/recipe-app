@@ -13,7 +13,7 @@
             "1 ½ cups small curd cottage cheese",
             "1 ¼ cups shredded Swiss cheese"
         ],
-        "Directions":[
+        "directions":[
             "Preheat the oven to 350 degrees F (175 degrees C). Grease a 9x13-inch baking dish.",
             "Heat a large skillet over medium-high heat; cook and stir bacon and onion until bacon is evenly browned, about 10 minutes. Drain.",
             "Transfer bacon and onion to a large bowl. Stir in eggs, potatoes, Cheddar cheese, cottage cheese, and Swiss cheese. Pour mixture into the prepared baking dish.",
@@ -38,7 +38,7 @@
             "salt and ground black pepper to taste",
             "2 tablespoons grated Parmesan cheese"
         ],
-        "Directions":[
+        "directions":[
             "Preheat the oven to 350 degrees F (175 degrees C).",
             "Cut each roll into 8 cubes. Spread onto a baking sheet in a single layer.",
             "Bake in the preheated oven until toasted, about 10 minutes.",
@@ -65,7 +65,7 @@
             "1 teaspoon ground cinnamon",
             "½ teaspoon ground nutmeg"
         ],
-        "Directions":[
+        "directions":[
             "Mix cream cheese, confectioners' sugar, 2 tablespoons milk, and 1 teaspoon vanilla extract in a bowl until smooth and creamy; fold in 1 cup blueberries.",
             "Cover the bottom of a 10x14-inch baking dish with a layer of bread cubes. Spread cream cheese mixture over bread layer; top with remaining bread cubes.",
             "Whisk 2 cups milk, eggs, 2 teaspoons vanilla extract, cinnamon, and nutmeg together in a large bowl; pour over bread mixture. Sprinkle 1 cup blueberries over bread-egg mixture. Cover dish tightly with aluminum foil and refrigerate, 8 hours to overnight. Remove from refrigerator 30 to 60 minutes before baking.",
@@ -92,7 +92,7 @@
             "1 pound fresh spinach, wilted, squeezed dry",
             "12 ounces shredded extra-sharp Cheddar cheese, divided"
         ],
-        "Directions":[
+        "directions":[
             "Oil bottom and sides of a 9x13-inch baking dish with about a tablespoon of bacon fat.",
             "Place bread cubes in a large mixing bowl.",
             "Crack eggs into a separate mixing bowl. Season with salt, pepper, cayenne, and nutmeg. Add cream and whisk mixture thoroughly.",
@@ -121,7 +121,7 @@
             "4 eggs, separated",
             "¼ cup butter, melted"
         ],
-        "Directions":[
+        "directions":[
             "Preheat a waffle iron according to manufacturer's instructions.",
             "Combine flour, brown sugar, baking powder, cinnamon, allspice, ginger, and salt in a mixing bowl. Stir milk, pumpkin, and egg yolks together in a separate bowl. Whip egg whites in a clean dry bowl until soft peaks form.",
             "Stir the flour mixture and 1/4 cup melted butter to the pumpkin mixture, stirring just to combine. Use a whisk or rubber spatula to fold 1/3 of the egg whites into the batter, stirring gently until incorporated. Fold in the remaining egg whites. Cook waffles according to manufacturer's instructions.",
@@ -145,7 +145,7 @@
             "2 tablespoons ground cinnamon",
             "1 loaf sliced white bread, crusts removed."
         ],
-        "Directions":[
+        "directions":[
             "Preheat oven to 350 degrees F (175 degrees C).",
             "Mix cream cheese, chocolate-hazelnut spread, berry cream cheese, milk, and vanilla extract together in a bowl.",
             "Pour melted butter into a shallow bowl.",
@@ -173,7 +173,7 @@
             "½ cup white sugar",
             "2 tablespoons ground cinnamon"
         ],
-        "Directions":[
+        "directions":[
             "To make the dough: Pour the warm milk into a mixing bowl and mash in the fresh cake yeast. Mix in butter, eggs, cardamom, sugar, salt, and 3 1/2 cups flour. Use a wooden spoon to mix the dough. If it's very sticky, mix in the remaining 1/2 cup flour. Cover the bowl and let the dough rise for 30 minutes.",
             "Meanwhile, make the filling: Beat together the butter and sugar in a medium bowl until creamy. Stir in the cinnamon until incorporated. Set aside.",
             "Transfer the dough to a floured surface and knead until firm, about 3 minutes. Divide the dough in half; roll each half into a rectangle, no more than 1/2-inch thick. Spread each rectangle with 1/2 of the filling.",
@@ -208,7 +208,7 @@
             "8 plain frozen waffles",
             "8 thin slices Cheddar cheese"
         ],
-        "Directions":[
+        "directions":[
             "Whisk together eggs, cream, cayenne pepper, 1 tablespoon salt, and black pepper in a large bowl until well combined; set aside. Shake together flour, cornstarch, and 1 tablespoon salt in a paper bag; set aside.",
             "Dip chicken into beaten egg mixture, then place into flour mixture in the bag and shake to coat. Place breaded chicken onto a wire rack; do not stack. Let chicken rest for 20 minutes to allow coating to set.",
             "Heat about 3 inches oil in a deep fryer or large saucepan to 375 degrees F (190 degrees C). In small batches, fry chicken until golden brown, 5 to 8 minutes. Remove chicken to a paper towel-lined plate to drain. Set aside or keep warm in a low oven.",
@@ -218,6 +218,38 @@
             "Place 4 waffles on a cookie sheet. Top each waffle with 2 chicken tenders, 3 bacon slices, and 2 cheese slices.",
             "Cook under the preheated broiler until cheese is melted, 3 to 5 minutes.",
             "Spread 3 tablespoons maple mayonnaise on each of the remaining 4 waffles and place on top of sandwich."
+        ]
+    },
+
+    {
+        "id":9,
+        "name":"Full English Breakfast for One",
+        "img":"https://www.allrecipes.com/thmb/h5Vl_ttmtWLxR8L_QDhh6TWuOuo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/9220994-e01afcac0e5a49f4bd5fcccfd2e5730a.jpg",
+        "description":"Nothing beats a full English breakfast. Whether you have a long day ahead of you outdoors, a day in the office or are preparing yourself for a lazy Sunday, this breakfast is for you. Easy to make, even easier to eat - enjoy with plenty of ketchup and brown sauce!",
+        "ingredients":[
+            "2 medium pork sausage patties",
+            "1 tomato",
+            "2 tablespoons butter, divided",
+            "2 slices bacon",
+            "¼ (16 ounce) package frozen hash browns, thawed",
+            "1 (6 ounce) package sliced fresh mushrooms",
+            "1 (15 ounce) can baked beans",
+            "1 large egg",
+            "2 slices bread",
+            "salt and ground black pepper to taste",
+            "1 sprig fresh parsley, chopped"
+        ],
+        "directions":[
+            "Preheat the oven to 425 degrees F (220 degrees C).",
+            "Brown the sausages on all sides in a frying pan over medium heat for 5 minutes. Transfer to a baking dish.",
+            "Bake the sausages in the preheated oven for 10 minutes.",
+            "Score a cross into the bottom of the tomato and place, cross-side up, in the baking dish with the sausages.",
+            "Bake the sausages and the tomato for 10 minutes. Turn off the oven, but do not remove the sausages and tomato.",
+            "Meanwhile, in the frying pan used to brown the sausages, melt 1 tablespoon of butter and fry the bacon, hash browns, and the mushrooms over high heat until the mushrooms have softened, the bacon begins to crisp, and the hash browns turn golden, about 7 minutes. Transfer to the oven to keep warm.",
+            "Pour beans in a small saucepan and cook, stirring frequently, over medium heat until heated through.",
+            "Crack egg into a skillet over medium heat. Cook until outer edges become opaque, about 1 minute. Cover, reduce heat to low, and cook until whites are completely set, about 4 minutes.",
+            "Toast bread and spread remaining butter over.",
+            "Bring together the sausages, hash browns, bacon, beans, tomato, mushrooms, fried egg, and toast on a warm serving plate. Season with salt and pepper, garnish with parsley, and serve immediately."
         ]
     }
 ]

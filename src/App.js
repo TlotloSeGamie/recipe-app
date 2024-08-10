@@ -1,20 +1,24 @@
-import React from 'react';
+import React, { useState } from "react";
 import './App.css';
-import Recipes from './recipes';
-import Navbar from './navbar';
-import Home from './home';
-import Login from './login';
-import Breakfast from './breakfast';
+import Navbar from "./navbar";
+import Home from "./home";
+import Breakfast from "./breakfast";
 
-function App() {
+const App = () => {
+  const [currentSection, setCurrentSection] = useState('home');
+
+  const handleMenuClick = (section) => {
+    setCurrentSection(section);
+  };
+
   return (
-    <div className="App">
-      <Navbar/>
-      <Recipes/>
-      <Breakfast/>
+    <div>
+      <Navbar onMenuClick={handleMenuClick} />
+      {currentSection === 'home' && <Home />}
+      {currentSection === 'breakfast' && <Breakfast selectedMenu="breakfast" goHome={() => setCurrentSection('home')} />}
+      {/* Add more sections as needed */}
     </div>
   );
-}
+};
 
 export default App;
-

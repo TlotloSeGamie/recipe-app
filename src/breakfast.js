@@ -2,15 +2,26 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Recipes.css";
 
-const Recipes = () => {
+const Breakfast = ({ selectedMenu, goHome }) => {
     const [recipeItems, setRecipeItems] = useState([]);
     const [selectedRecipe, setSelectedRecipe] = useState(null);
 
     useEffect(() => {
-        axios.get('/breakfast.json')
-            .then(response => setRecipeItems(response.data))
-            .catch(error => console.error('Error fetching data:', error));
-    }, []);
+        if (selectedMenu === 'breakfast') {
+            axios.get('/breakfast.json')
+                .then(response => {
+                    console.log('Fetched data:', response.data); // Debugging statement
+                    if (Array.isArray(response.data)) {
+                        setRecipeItems(response.data);
+                    } else {
+                        console.error('Expected an array but got:', response.data);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        }
+    }, [selectedMenu]);
 
     const handleViewClick = (item) => {
         setSelectedRecipe(item);
@@ -22,20 +33,25 @@ const Recipes = () => {
 
     return (
         <div className="recipe-container">
-            <div className="recipe-grid">
-                {Array.isArray(recipeItems) && recipeItems.map(item => (
-                    <div key={item.id} className="recipe-card">
-                        <div className="recipe-img-container">
-                            <img src={item.img} alt={item.name} />
+            <button className="home-button" onClick={goHome}>Home</button>
+            {recipeItems.length > 0 ? (
+                <div className="recipe-grid">
+                    {recipeItems.map(item => (
+                        <div key={item.id} className="recipe-card" onClick={() => handleViewClick(item)}>
+                            <div className="recipe-img-container">
+                                <img src={item.img} alt={item.name} />
+                            </div>
+                            <div className="recipe-info">
+                                <h3 className="recipe-name">{item.name}</h3>
+                                <p className="recipe-description">{item.description}</p>
+                                <button className="view-button" onClick={(e) => { e.stopPropagation(); handleViewClick(item) }}>View</button>
+                            </div>
                         </div>
-                        <div className="recipe-info">
-                            <h3 className="recipe-name">{item.name}</h3>
-                            <p className="recipe-description">{item.description}</p>
-                            <button onClick={() => handleViewClick(item)}>View</button>
-                        </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            ) : (
+                <p>Loading recipes...</p>
+            )}
 
             {selectedRecipe && (
                 <div className="modal">
@@ -50,7 +66,7 @@ const Recipes = () => {
                             <div className="ingred-modal">
                                 <h4>Ingredients</h4>
                                 <ul>
-                                    {selectedRecipe.ingredients.map((ingredient, index) => (
+                                    {selectedRecipe.ingredients && Array.isArray(selectedRecipe.ingredients) && selectedRecipe.ingredients.map((ingredient, index) => (
                                         <li key={index}>{ingredient}</li>
                                     ))}
                                 </ul>
@@ -58,7 +74,7 @@ const Recipes = () => {
                             <div className="recipe-directions-modal">
                                 <h4>Directions</h4>
                                 <ol>
-                                    {selectedRecipe.Directions.map((direction, index) => (
+                                    {selectedRecipe.directions && Array.isArray(selectedRecipe.directions) && selectedRecipe.directions.map((direction, index) => (
                                         <li key={index}>{direction}</li>
                                     ))}
                                 </ol>
@@ -71,4 +87,4 @@ const Recipes = () => {
     );
 }
 
-export default Recipes;
+export default Breakfast;
