@@ -14,7 +14,7 @@
             "1 ounce Cheddar cheese, sliced",
             "½ ripe avocado, sliced"
         ],
-        "Directions": [
+        "directions": [
             " Gather the ingredients.",
             " Heat olive oil in a skillet over medium heat. Crack eggs into skillet; cook for 1 to 2 minutes. Flip and cook egg until done, 2 to 5 minutes more. Transfer eggs to a plate and season with salt and pepper.",
             " Spread butter onto 1 side of each bread slice. Heat a skillet over medium heat. Lay bread slices in the hot skillet, butter-side down. Quickly layer Swiss cheese, 1 fried egg, Cheddar cheese, 1 fried egg, avocado, and remaining bread slice, butter-side up.",
@@ -45,7 +45,7 @@
             "3 ounces Swiss cheese, thinly sliced",
             "4 hoagie rolls, split lengthwise"
         ],
-        "Directions":[
+        "directions":[
             "Gather all ingredients.",
             "Mix salt, pepper, paprika, chili powder, onion powder, garlic powder, thyme, marjoram, and basil together in a small bowl.",
             "Place steak in a large bowl; sprinkle seasoning mixture over top and stir to coat.",
@@ -76,7 +76,7 @@
             "2 slices sharp Cheddar cheese",
             "⅓ French baguette, cut in half lengthwise"
         ],
-        "Directions":[
+        "directions":[
             "Gather all ingredients.",
             "Melt 1 tablespoon butter in a large skillet over medium heat. Add onion; cook and stir until just tender, about 2 minutes. Push onion to sides of the pan; add mushrooms and cook until softened. Stir in bell pepper and cook just until tender, about 3 minutes. Remove vegetables from the pan with a slotted spoon; set aside.",
             "Heat remaining 1 tablespoon butter in the same skillet. Add steak and pickled hot peppers; season with hot pepper sauce, salt, and pepper. Cook and stir until steak is mostly browned, 2 to 3 minutes. Add vegetable mixture back into the pan; stir until heated through.",
@@ -100,7 +100,7 @@
             "12 fresh basil leaves, or to taste",
             "aluminum foil"
         ],
-        "Directions":[
+        "directions":[
             "Preheat the oven to 425 degrees F (220 degrees C). Spray a baking pan with vegetable oil spray.",
             "Place frozen chicken fillets on the prepared pan and bake in the preheated oven for 10 to 12 minutes. Turn chicken, sprinkle 2 tablespoons Parmesan cheese on each fillet, and bake until crispy, an additional 10 to 12 minutes.",
             "Slice garlic bread into 4 equal portions. Open each portion and place garlic-side up on a baking sheet. Warm garlic bread in the oven about 5 minutes.",
@@ -126,7 +126,7 @@
             "2 tablespoons mayonnaise, or to taste",
             "2 (6 inch) submarine rolls, split"
         ],
-        "Directions":[
+        "directions":[
             "Cut each chicken breast into thin, almost deli-style slices with a meat slicer or very sharp knife. Toss with Cajun seasoning and let rest to absorb the seasoning and thaw, 1 to 2 hours.",
             "Preheat the oven to 350 degrees F (175 degrees C). Line a baking sheet with foil.",
             "Melt clarified butter in a skillet over medium heat. Add onion and green pepper; saute for 2 to 3 minutes. Add chicken and mushrooms. Use a fork or spatula to break apart the chicken as it cooks-you want that authentic shredded/pulled texture. Cook until chicken is very nearly done, about 8 minutes.",
@@ -151,7 +151,7 @@
             "8 large sesame seed sandwich buns",
             "8 slices mozzarella cheese"
         ],
-        "Directions":[
+        "directions":[
             "Place chicken into the bottom of a slow cooker and cover with water. Cook on High until it is no longer pink in the center and falls apart when pulled, about 4 hours.",
             "Puree onion and garlic in the bowl of a food processor until finely minced.",
             "Puree onion and garlic in the bowl of a food processor until finely minced.",
@@ -175,7 +175,7 @@
             "8 slices pepperjack cheese",
             "¼ cup roasted red bell peppers, drained and sliced (Optional)"
         ],
-        "Directions":[
+        "directions":[
             "Preheat an oven to 325 degrees F (165 degrees C).",
             "Place the bacon in a large, deep skillet; cook over medium-high heat, turning occasionally, until evenly browned. Drain the bacon slices on a paper towel-lined plate.",
             "Combine the mayonnaise, sour cream, and hot sauce in a small bowl. Spread both halves of the bread with the mayonnaise mixture. Place chicken on bottom half of bread; layer bacon and cheese on top of chicken. Fold the top half of the bread over the bottom, and wrap with foil.",
@@ -196,7 +196,7 @@
             "¼ cup diced red onion",
             "1 cup shredded Monterey Jack cheese"
         ],
-        "Directions":[
+        "directions":[
             "Slice each quarter of focaccia bread in half horizontally. Spread each half with pesto. Layer bottom halves with equal amounts chicken, bell pepper, onion, and cheese. Top with remaining focaccia halves, forming 4 sandwiches.",
             "Grill paninis 5 minutes in the preheated grill, or until focaccia bread is golden brown and cheese is melted."
         ]
@@ -221,7 +221,7 @@
             "8 (1 ounce) slices provolone cheese",
             "½ teaspoon Italian seasoning"
         ],
-        "Directions":[
+        "directions":[
             "Preheat an oven to 500 degrees F (260 degrees C). Split the rolls open and toast them on a baking sheet in the oven while it is preheating. Mix together the mayonnaise, garlic, and Parmesan cheese in a small bowl. Refrigerate until ready to use. Remove the rolls from the oven when toasted as desired.",
             "Heat olive oil in a large skillet over medium-high heat. Carefully place the sliced steak and onions in the pan and season with sea salt, Worcestershire sauce, and liquid smoke. Cook and stir until the steak is browned and the onion is tender, about 10 minutes.",
             "Generously spread the prepared garlic-Parmesan mayonnaise on both halves of the toasted rolls. Divide the steak and onion mixture evenly among the bottom halves of the rolls, piling them high. Top each with 2 slices provolone cheese and sprinkle with Italian seasoning. Place the tops on the sandwiches.",
@@ -243,7 +243,7 @@
             "½ (18 ounce) bottle hickory brown sugar barbeque sauce",
             "3 tablespoons brown sugar, or to taste"
         ],
-        "Directions":[
+        "directions":[
             "Arrange onion slices in the bottom of a slow cooker. Season pork with salt and pepper and place over onion. Add vinegar and water.",
             "Cook pork on Low for 8 hours. Transfer pork to a platter and shred with two forks. Remove and discard about half the pork juices from slow cooker and stir in shredded pork, barbeque sauce, and brown sugar."
         ]
@@ -268,7 +268,7 @@
             "¼ teaspoon Italian seasoning",
             "12 slider buns"
         ],
-        "Directions":[
+        "directions":[
             "Preheat the oven to 350 degrees F (175 degrees C). Spray a 9x13-inch baking dish with cooking spray.",
             "Slice the rolls in half vertically, leaving each roll attached as a sheet. Peel off the top layer and set aside; place the bottoms of the rolls in the prepared dish. Layer roast beef and cheese across the rolls.",
             "Heat oil in a a small skillet over medium-high heat. Cook onion, bell pepper, and mushrooms until soft, about 5 minutes. Spread pepper mixture over cheese and beef. Place the tops of the rolls back on.",
@@ -295,7 +295,7 @@
             "1-2 teaspoons of cranberry sauce (optional)",
             "1 slice of red onion (optional)"
         ],
-        "Directions":[
+        "directions":[
             "Toast the slices of bread until golden brown if desired.Cook the bacon if using, and drain on paper towels.Slice the avocado, tomato, and red onion.",
             "Spread mayonnaise on one or both slices of bread. Add mustard or aioli if desired.Layer the turkey slices evenly over the bread.",
             "Place the cheese slices on top of the turkey.Add the lettuce (or spinach), followed by the tomato slices.Place the avocado slices on top of the tomato.If using bacon, add the crispy bacon slices on top of the avocado.Add any additional toppings like cranberry sauce or red onion.",

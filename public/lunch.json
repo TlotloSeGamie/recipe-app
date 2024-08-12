@@ -1,0 +1,31 @@
+[
+    {
+        "id":1,
+        "name":"Spinach and Pistachio Quiche",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92YD04hkWpCVKL8sg_6WeIpRvEd5XvDTVWA&s",
+        "description":"Summer is in the air and the holidays are just around the corner. The quickest and easiest way to feed a crowd of people is a quiche or savoury tart. Why not try this delicious combination of spinach and pistachio. It works well together along with the goats cheese and feta",
+        "ingredients":[
+            "250 g cake flour",
+            "10 g cornflour",
+            "1 tsp mustard powder",
+            "1 tsp salt",
+            "100 g butter",
+            "30 g lard use butter if you don't want to use lard",
+            "1 egg yolk",
+            "3 sprigs mint",
+            "1 sprig fennel",
+            "1 lemon zest",
+            "45-60 ml cold water or 1 Tbls vodka develops less gluten for a flakey pastry"
+        ],
+        "directions":[
+            "In a separate bowl whisk the dry ingredients together: 250 g cake flour,10 g cornflour,1 tsp mustard powder,1 tsp salt",
+            "Add yolk, butter and lard to a food processor fitted with a blade attachment. Blend until light and creamy in colour: 100 g butter,30 g lard,1 egg yolk",
+            "Add the mint, fennel and zest and pulse blitz until incorporated into the butter mix: 3 sprigs mint,1 sprig fennel,1 lemon zest",
+            "Add half the flour mix to the butter mix and pulse blitz for 30 seconds. Add the remaining flour and continue to pulse blitz until the mixture resembles crumbs",
+            "Add ice water 1 Tbls at a time until a dough forms and comes together: 45-60 ml cold water",
+            "Form into a ball or roll into a rectangle. Cover and rest for at least 1 hour or until ready to use. You can freeze too. This quantity will be enough for 2 x 22cm (230g ea) pie dishes of 1 x 20cm (180g) and 1 x 27cm (280g)pie dishes",
+            "When ready to bake preheat oven to 200℃. Roll out pastry on floured work surface. Lift the pastry with the rolling pin and roll over dish to line your chosen buttered dish with the quantity required for that dish as indicated above. Press dough into dish. Add a sheet of baking paper on top the dough and fill the dish with baking beans. Bake blind for 20 minutes.",
+            "Remove baking beans and let the case cool to room temperature before filling. Once cooled brush the pastry case with the egg white ."
+        ]
+    }
+]

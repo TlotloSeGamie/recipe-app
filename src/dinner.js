@@ -2,16 +2,16 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Recipes.css";
 
-const Breakfast = ({ selectedMenu, goHome }) => {
+const Dinner = ({ selectedMenu, goHome }) => {
     const [recipeItems, setRecipeItems] = useState([]);
     const [selectedRecipe, setSelectedRecipe] = useState(null);
     const [searchTerm, setSearchTerm] = useState("");
 
     useEffect(() => {
-        if (selectedMenu === 'sandwich') {
-            axios.get('/db.json')
+        if (selectedMenu === 'dinner') {
+            axios.get('/dinner.json')
                 .then(response => {
-                    console.log('Fetched data:', response.data);
+                    console.log('Fetched data:', response.data); 
                     if (Array.isArray(response.data)) {
                         setRecipeItems(response.data);
                     } else {
@@ -74,25 +74,27 @@ const Breakfast = ({ selectedMenu, goHome }) => {
                     <div className="modal-content">
                         <span className="close-button" onClick={closeModal}>&times;</span>
                         <div className="recipe-info-modal">
-                            <img src={selectedRecipe.img} alt={selectedRecipe.name} />
-                        </div>
-                        <h3 className="recipe-name-modal">{selectedRecipe.name}</h3>
-                        <p className="recipe-description-modal">{selectedRecipe.description}</p>
-                        <div className="ingred-modal">
-                            <h4>Ingredients</h4>
-                            <ul>
-                                {selectedRecipe.ingredients && Array.isArray(selectedRecipe.ingredients) && selectedRecipe.ingredients.map((ingredient, index) => (
-                                    <li key={index}>{ingredient}</li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="recipe-directions-modal">
-                            <h4>Directions</h4>
-                            <ol>
-                                {selectedRecipe.directions && Array.isArray(selectedRecipe.directions) && selectedRecipe.directions.map((direction, index) => (
-                                    <li key={index}>{direction}</li>
-                                ))}
-                            </ol>
+                            <div className="recipe-img-modal">
+                                <img src={selectedRecipe.img} alt={selectedRecipe.name} />
+                            </div>
+                            <h3 className="recipe-name-modal">{selectedRecipe.name}</h3>
+                            <p className="recipe-description-modal">{selectedRecipe.description}</p>
+                            <div className="ingred-modal">
+                                <h4>Ingredients</h4>
+                                <ul>
+                                    {selectedRecipe.ingredients && Array.isArray(selectedRecipe.ingredients) && selectedRecipe.ingredients.map((ingredient, index) => (
+                                        <li key={index}>{ingredient}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="recipe-directions-modal">
+                                <h4>Directions</h4>
+                                <ol>
+                                    {selectedRecipe.directions && Array.isArray(selectedRecipe.directions) && selectedRecipe.directions.map((direction, index) => (
+                                        <li key={index}>{direction}</li>
+                                    ))}
+                                </ol>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,4 +103,4 @@ const Breakfast = ({ selectedMenu, goHome }) => {
     );
 }
 
-export default Breakfast;
+export default Dinner;

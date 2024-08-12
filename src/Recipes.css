@@ -43,7 +43,7 @@
 
 .recipe-info {
     padding: 15px;
-    flex: 1; /* Ensures button stays at the bottom */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -113,7 +113,7 @@ button:hover {
 
 .recipe-img-modal {
     width: 100%;
-    max-width: 98%; /* The image takes up to 70% of the modal width */
+    max-width: 98%; 
     max-height: 40%;
     margin-bottom: 20px;
 }
@@ -185,20 +185,52 @@ button:hover {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ff7f50; /* Coral color */
+    background-color: #ff7f50; 
     color: white;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    z-index: 1000; /* Ensure it stays on top */
+    z-index: 1000; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .home-button:hover {
-    background-color: #ff6347; /* Slightly darker coral on hover */
+    background-color: #ff6347; 
 }
 
+.search-container-lunch{
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+    background-color: #e0dede;
+    opacity: 90%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 13px 35px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    background: none;
+    color: #000000;
+    padding: 5px;
+    outline: none;
+  }
+
+  .search-icon {
+    color: #0c0c0c;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
 
 

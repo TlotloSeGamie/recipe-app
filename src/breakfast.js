@@ -5,12 +5,13 @@ import "./Recipes.css";
 const Breakfast = ({ selectedMenu, goHome }) => {
     const [recipeItems, setRecipeItems] = useState([]);
     const [selectedRecipe, setSelectedRecipe] = useState(null);
+    const [searchTerm, setSearchTerm] = useState("")
 
     useEffect(() => {
         if (selectedMenu === 'breakfast') {
             axios.get('/breakfast.json')
                 .then(response => {
-                    console.log('Fetched data:', response.data); // Debugging statement
+                    console.log('Fetched data:', response.data); 
                     if (Array.isArray(response.data)) {
                         setRecipeItems(response.data);
                     } else {
@@ -31,12 +32,27 @@ const Breakfast = ({ selectedMenu, goHome }) => {
         setSelectedRecipe(null);
     };
 
+    const filteredRecipes = recipeItems.filter(item =>
+        item.name.toLowerCase().includes(searchTerm.toLocaleLowerCase()) ||
+        item.description.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
+    );
+
     return (
         <div className="recipe-container">
+            <div className="search-container-lunch">
+                <input 
+                    type="text" 
+                    placeholder="Search recipes..." 
+                    value={searchTerm} 
+                    onChange={(e) => setSearchTerm(e.target.value)} 
+                    className="search-input" 
+                />
+                <i className="ri-search-line search-icon"></i>
+            </div>
             <button className="home-button" onClick={goHome}>Home</button>
-            {recipeItems.length > 0 ? (
+            {filteredRecipes.length > 0 ? (
                 <div className="recipe-grid">
-                    {recipeItems.map(item => (
+                    {filteredRecipes.map(item => (
                         <div key={item.id} className="recipe-card" onClick={() => handleViewClick(item)}>
                             <div className="recipe-img-container">
                                 <img src={item.img} alt={item.name} />

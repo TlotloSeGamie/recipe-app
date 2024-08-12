@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Recipes.css";
 
-const Breakfast = ({ selectedMenu, goHome }) => {
+const Lunch = ({ selectedMenu, goHome }) => {
     const [recipeItems, setRecipeItems] = useState([]);
     const [selectedRecipe, setSelectedRecipe] = useState(null);
     const [searchTerm, setSearchTerm] = useState("");
 
     useEffect(() => {
-        if (selectedMenu === 'sandwich') {
-            axios.get('/db.json')
+        if (selectedMenu === 'lunch') {
+            axios.get('/lunch.json')
                 .then(response => {
                     console.log('Fetched data:', response.data);
                     if (Array.isArray(response.data)) {
@@ -19,7 +19,7 @@ const Breakfast = ({ selectedMenu, goHome }) => {
                     }
                 })
                 .catch(error => {
-                    console.error('Error fetching data:', error);
+                    console.error('Error fetching data', error);
                 });
         }
     }, [selectedMenu]);
@@ -32,14 +32,14 @@ const Breakfast = ({ selectedMenu, goHome }) => {
         setSelectedRecipe(null);
     };
 
-    const filteredRecipes = recipeItems.filter(item =>
-        item.name.toLowerCase().includes(searchTerm.toLocaleLowerCase()) ||
-        item.description.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
+    const filteredRecipes = recipeItems.filter(item => 
+        item.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+        item.description.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
     return (
         <div className="recipe-container">
-            <div className="search-container-lunch">
+             <div className="search-container-lunch">
                 <input 
                     type="text" 
                     placeholder="Search recipes..." 
@@ -50,10 +50,11 @@ const Breakfast = ({ selectedMenu, goHome }) => {
                 <i className="ri-search-line search-icon"></i>
             </div>
             <button className="home-button" onClick={goHome}>Home</button>
+            
             {filteredRecipes.length > 0 ? (
                 <div className="recipe-grid">
                     {filteredRecipes.map(item => (
-                        <div key={item.id} className="recipe-card" onClick={() => handleViewClick(item)}>
+                        <div key={item.id} className="recipe-card" onClick={() => handleViewClick(item) }>
                             <div className="recipe-img-container">
                                 <img src={item.img} alt={item.name} />
                             </div>
@@ -66,7 +67,7 @@ const Breakfast = ({ selectedMenu, goHome }) => {
                     ))}
                 </div>
             ) : (
-                <p>Loading recipes...</p>
+                <p>No recipes found.</p>   
             )}
 
             {selectedRecipe && (
@@ -74,25 +75,27 @@ const Breakfast = ({ selectedMenu, goHome }) => {
                     <div className="modal-content">
                         <span className="close-button" onClick={closeModal}>&times;</span>
                         <div className="recipe-info-modal">
-                            <img src={selectedRecipe.img} alt={selectedRecipe.name} />
-                        </div>
-                        <h3 className="recipe-name-modal">{selectedRecipe.name}</h3>
-                        <p className="recipe-description-modal">{selectedRecipe.description}</p>
-                        <div className="ingred-modal">
-                            <h4>Ingredients</h4>
-                            <ul>
-                                {selectedRecipe.ingredients && Array.isArray(selectedRecipe.ingredients) && selectedRecipe.ingredients.map((ingredient, index) => (
-                                    <li key={index}>{ingredient}</li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="recipe-directions-modal">
-                            <h4>Directions</h4>
-                            <ol>
-                                {selectedRecipe.directions && Array.isArray(selectedRecipe.directions) && selectedRecipe.directions.map((direction, index) => (
-                                    <li key={index}>{direction}</li>
-                                ))}
-                            </ol>
+                            <div className="recipe-img-modal">
+                                <img src={selectedRecipe.img} alt={selectedRecipe.name} />
+                            </div>
+                            <h3 className="recipe-name-modal">{selectedRecipe.name}</h3>
+                            <p className="recipe-description-modal">{selectedRecipe.description}</p>
+                            <div className="ingred-modal">
+                                <h4>Ingredients</h4>
+                                <ul>
+                                    {selectedRecipe.ingredients && Array.isArray(selectedRecipe.ingredients) && selectedRecipe.ingredients.map((ingredient, index) => (
+                                        <li key={index}>{ingredient}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="recipe-directions-modal">
+                                <h4>Directions</h4>
+                                <ol>
+                                    {selectedRecipe.directions && Array.isArray(selectedRecipe.directions) && selectedRecipe.directions.map((direction, index) => (
+                                        <li key={index}>{direction}</li>
+                                    ))}
+                                </ol>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,4 +104,4 @@ const Breakfast = ({ selectedMenu, goHome }) => {
     );
 }
 
-export default Breakfast;
+export default Lunch;

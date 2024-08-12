@@ -1,0 +1,6 @@
+{
+    on add u need recipe name, img, ingredients,direction, catogory, prep time, cooking time, servings
+    add fucntion, search funtion
+    make app responsive
+    local storage for registering user
+}

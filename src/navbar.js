@@ -31,8 +31,7 @@ const Navbar = ({ onMenuClick }) => {
           <li><a href="#" onClick={() => {onMenuClick('breakfast'); toggleMenu();}}>BREAKFAST</a></li>
           <li><a href="#" onClick={() => {onMenuClick('lunch'); toggleMenu();}}>LUNCH</a></li>
           <li><a href="#" onClick={() => {onMenuClick('dinner'); toggleMenu();}}>DINNER</a></li>
-          <li><a href="#">SALADS</a></li>
-          {/* Add more items as needed */}
+          <li><a href="#" onClick={() => {onMenuClick('sandwich'); toggleMenu();}}>SANDWICH</a></li>
         </ul>
         <div className="bordered-box"></div>
         <a href="#" className="login-link"><i className="ri-user-3-line"></i>Login</a>

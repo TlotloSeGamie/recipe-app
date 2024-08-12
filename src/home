@@ -1,5 +1,5 @@
 import React from "react";
-import foodie from "../src/images/foodie home.jpg";
+import foodie from '../src/images/foodie home.jpg';
 import axios from "axios";
 import Login from "./login";
 
