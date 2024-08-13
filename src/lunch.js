@@ -39,7 +39,7 @@ const Lunch = ({ selectedMenu, goHome }) => {
 
     return (
         <div className="recipe-container">
-             <div className="search-container-lunch">
+            <div className="search-container-lunch">
                 <input 
                     type="text" 
                     placeholder="Search recipes..." 
@@ -54,7 +54,7 @@ const Lunch = ({ selectedMenu, goHome }) => {
             {filteredRecipes.length > 0 ? (
                 <div className="recipe-grid">
                     {filteredRecipes.map(item => (
-                        <div key={item.id} className="recipe-card" onClick={() => handleViewClick(item) }>
+                        <div key={item.id} className="recipe-card" onClick={() => handleViewClick(item)}>
                             <div className="recipe-img-container">
                                 <img src={item.img} alt={item.name} />
                             </div>
@@ -102,6 +102,6 @@ const Lunch = ({ selectedMenu, goHome }) => {
             )}
         </div>
     );
-}
+};
 
 export default Lunch;

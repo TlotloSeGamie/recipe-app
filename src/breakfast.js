@@ -5,13 +5,13 @@ import "./Recipes.css";
 const Breakfast = ({ selectedMenu, goHome }) => {
     const [recipeItems, setRecipeItems] = useState([]);
     const [selectedRecipe, setSelectedRecipe] = useState(null);
-    const [searchTerm, setSearchTerm] = useState("")
+    const [searchTerm, setSearchTerm] = useState("");
 
     useEffect(() => {
         if (selectedMenu === 'breakfast') {
             axios.get('/breakfast.json')
                 .then(response => {
-                    console.log('Fetched data:', response.data); 
+                    console.log('Fetched data:', response.data);
                     if (Array.isArray(response.data)) {
                         setRecipeItems(response.data);
                     } else {
@@ -19,7 +19,7 @@ const Breakfast = ({ selectedMenu, goHome }) => {
                     }
                 })
                 .catch(error => {
-                    console.error('Error fetching data:', error);
+                    console.error('Error fetching data', error);
                 });
         }
     }, [selectedMenu]);
@@ -32,9 +32,9 @@ const Breakfast = ({ selectedMenu, goHome }) => {
         setSelectedRecipe(null);
     };
 
-    const filteredRecipes = recipeItems.filter(item =>
-        item.name.toLowerCase().includes(searchTerm.toLocaleLowerCase()) ||
-        item.description.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
+    const filteredRecipes = recipeItems.filter(item => 
+        item.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+        item.description.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
     return (
@@ -50,6 +50,7 @@ const Breakfast = ({ selectedMenu, goHome }) => {
                 <i className="ri-search-line search-icon"></i>
             </div>
             <button className="home-button" onClick={goHome}>Home</button>
+            
             {filteredRecipes.length > 0 ? (
                 <div className="recipe-grid">
                     {filteredRecipes.map(item => (
@@ -66,7 +67,7 @@ const Breakfast = ({ selectedMenu, goHome }) => {
                     ))}
                 </div>
             ) : (
-                <p>Loading recipes...</p>
+                <p>No recipes found.</p>   
             )}
 
             {selectedRecipe && (
@@ -101,6 +102,6 @@ const Breakfast = ({ selectedMenu, goHome }) => {
             )}
         </div>
     );
-}
+};
 
 export default Breakfast;
