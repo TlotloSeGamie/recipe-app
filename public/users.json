@@ -1,5 +1,14 @@
 {
-    "users":[]
+    "users":[
+        "email",
+        "password"
+    ],
+    "new users":[
+        "username",
+        "email",
+        "password",
+        "conrfirmPassword"
+    ]
 }
 
 

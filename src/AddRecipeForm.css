@@ -1,0 +1,96 @@
+.add-recipe-form-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    overflow-y: auto;
+    padding: 20px; 
+}
+
+.add-recipe-form-modal .form-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90%; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow-y: auto; 
+}
+
+.add-recipe-form-modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.add-recipe-form-modal h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.add-recipe-form-modal label {
+    display: block;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.add-recipe-form-modal input[type="text"],
+.add-recipe-form-modal textarea,
+.add-recipe-form-modal select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.add-recipe-form-modal button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.add-recipe-form-modal button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.add-recipe-form-modal .cancel-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-recipe-form-modal .cancel-button:hover {
+    background-color: #d32f2f;
+}

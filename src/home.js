@@ -21,11 +21,6 @@ const Home = ({ currentForm, switchForm }) => {
               </b>
             </p>
           </div>
-          <div className="footer">
-            <a href="#" className="login-link" onClick={() => switchForm('login')}>
-              <i className="ri-user-3-line"></i>Login
-            </a>
-          </div>
         </div>
     </div>
   );

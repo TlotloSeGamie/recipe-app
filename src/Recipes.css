@@ -185,27 +185,6 @@ button:hover {
     }
 }
 
-
-.home-button {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ff7f50; 
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    z-index: 1000; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.home-button:hover {
-    background-color: #ff6347; 
-}
-
 .search-container-lunch{
     position: fixed;
     top: 80px;
@@ -238,3 +217,33 @@ button:hover {
     cursor: pointer;
 }
 
+.button-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    z-index: 1000;
+}
+
+.home-button, .add-recipe {
+    background-color: #ff7f50; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Make buttons the same size */
+    display: flex; /* Use flexbox to center text */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    min-width: 120px; /* Minimum width to prevent shrinking */
+    text-align: center; /* Ensure text is centered */
+}
+
+.home-button:hover, .add-recipe:hover {
+    background-color: #ff6347; 
+}

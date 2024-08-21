@@ -8,12 +8,16 @@ import Lunch from "./lunch";
 import Dinner from "./dinner";
 import Login from "./login";
 import Register from "./register";
+import Profile from "./profile";
 
 const App = () => {
   const [currentSection, setCurrentSection] = useState(() => {
     return localStorage.getItem('currentSection') || 'home';
   });
   const [currentForm, setCurrentForm] = useState(null);
+  const [loggedInUser, setLoggedInUser] = useState(() => {
+    return JSON.parse(localStorage.getItem('loggedInUser')) || null;
+  });
 
   const handleMenuClick = (section) => {
     setCurrentSection(section);
@@ -28,16 +32,50 @@ const App = () => {
     setCurrentForm(null);
   };
 
+  const handleLogin = (user) => {
+    setLoggedInUser(user);
+    localStorage.setItem('loggedInUser', JSON.stringify(user));
+    closeForm();
+  };
+
+  const handleLogout = () => {
+    setLoggedInUser(null);
+    setCurrentSection('home');
+    localStorage.removeItem('currentSection');
+    localStorage.removeItem('loggedInUser');
+  };
+
   return (
     <div>
-      <Navbar onMenuClick={handleMenuClick} switchForm={switchForm} />
-      {!currentForm && currentSection === 'breakfast' && <Breakfast selectedMenu="breakfast" goHome={() => handleMenuClick('home')} />}
-      {!currentForm && currentSection === 'sandwich' && <Recipes selectedMenu="sandwich" goHome={() => handleMenuClick('home')} />}
-      {!currentForm && currentSection === 'lunch' && <Lunch selectedMenu="lunch" goHome={() => handleMenuClick('home')} />}
-      {!currentForm && currentSection === 'dinner' && <Dinner selectedMenu="dinner" goHome={() => handleMenuClick('home')} />}
-      {!currentForm && currentSection === 'home' && <Home />}
-      {currentForm === 'login' && <Login onFormSwitch={() => switchForm('register')} onClose={closeForm} />}
-      {currentForm === 'register' && <Register onFormSwitch={() => switchForm('login')} onClose={closeForm} />}
+      <Navbar
+        onMenuClick={handleMenuClick}
+        switchForm={switchForm}
+        loggedInUser={loggedInUser}
+        onLogout={handleLogout} 
+      />
+      {loggedInUser ? (
+        currentSection === 'profile' ? (
+          <Profile user={loggedInUser} onLogout={handleLogout} />
+        ) : (
+          <div>
+            {!currentForm && currentSection === 'breakfast' && <Breakfast selectedMenu="breakfast" goHome={() => handleMenuClick('home')} />}
+            {!currentForm && currentSection === 'sandwich' && <Recipes selectedMenu="sandwich" goHome={() => handleMenuClick('home')} />}
+            {!currentForm && currentSection === 'lunch' && <Lunch selectedMenu="lunch" goHome={() => handleMenuClick('home')} />}
+            {!currentForm && currentSection === 'dinner' && <Dinner selectedMenu="dinner" goHome={() => handleMenuClick('home')} />}
+            {!currentForm && currentSection === 'home' && <Home />}
+          </div>
+        )
+      ) : (
+        <div>
+          {!currentForm && currentSection === 'breakfast' && <Breakfast selectedMenu="breakfast" goHome={() => handleMenuClick('home')} />}
+          {!currentForm && currentSection === 'sandwich' && <Recipes selectedMenu="sandwich" goHome={() => handleMenuClick('home')} />}
+          {!currentForm && currentSection === 'lunch' && <Lunch selectedMenu="lunch" goHome={() => handleMenuClick('home')} />}
+          {!currentForm && currentSection === 'dinner' && <Dinner selectedMenu="dinner" goHome={() => handleMenuClick('home')} />}
+          {!currentForm && currentSection === 'home' && <Home />}
+          {currentForm === 'login' && <Login onFormSwitch={switchForm} onClose={closeForm} onLogin={handleLogin} />}
+          {currentForm === 'register' && <Register onFormSwitch={switchForm} onClose={closeForm} />}
+        </div>
+      )}
     </div>
   );
 };

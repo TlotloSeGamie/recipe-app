@@ -1,0 +1,116 @@
+/* Navbar styles */
+.navbar .profile-link,
+.navbar .logout-link {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar .profile-link:hover,
+.navbar .logout-link:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.navbar .profile-link:active,
+.navbar .logout-link:active {
+  background-color: #004494;
+  transform: translateY(-1px);
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-details {
+  margin-bottom: 15px;
+}
+.profile-details p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.profile-details p strong {
+  color: #333;
+}
+
+.logout-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.logout-btn:active {
+  background-color: #004494;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-dropdown {
+      width: 90%;
+  }
+  
+  .profile-container h2 {
+      font-size: 1.8rem;
+  }
+  
+  .profile-details p {
+      font-size: 1.1rem;
+  }
+  
+  .logout-btn {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+  }
+}
+.profile-dropdown {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  z-index: 10;
+}
+
+.profile-menu .profile-link {
+  cursor: pointer;
+}
+
+.profile-dropdown.open {
+  display: block; /* Shown when open */
+}
+
+.profile-dropdown i.ri-arrow-right-line {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
