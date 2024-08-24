@@ -251,5 +251,289 @@
             "Toast bread and spread remaining butter over.",
             "Bring together the sausages, hash browns, bacon, beans, tomato, mushrooms, fried egg, and toast on a warm serving plate. Season with salt and pepper, garnish with parsley, and serve immediately."
         ]
+    },
+
+    {
+        "id":10,
+        "name":"Classic American Breakfast Feast",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZb8CpUxwcgC_RB8-lPxfKY9rn_cWXg5dV3A&s",
+        "description":"Description: A hearty and satisfying spread that combines savory and sweet elements, perfect for a traditional morning meal. This feast includes fluffy scrambled eggs, crispy bacon, breakfast sausages, golden hash browns, and a stack of buttery pancakes with maple syrup.",
+        "ingredients":[
+            "6 eggs",
+            "1/4 cup milk or cream",
+            "Salt and pepper to taste",
+            "2 tablespoons butter",
+            "Crispy Bacon: 8 slices of bacon",
+            "8 breakfast sausages",
+            "4 large potatoes, peeled and grated",
+            "1/4 cup chopped onion",
+            "1/4 cup flour",
+            "1 egg, beaten",
+            "Salt and pepper to taste",
+            "1/4 cup vegetable oil"
+        ],
+        "directions":[
+            "Crack the eggs into a bowl, add milk, and whisk until fully combined.",
+            "Heat a non-stick skillet over medium heat and melt the butter.",
+            "Pour the egg mixture into the skillet. Let it sit for a few seconds until it begins to set at the edges.",
+            "Gently stir the eggs with a spatula, pushing them from the edges to the center.",
+            "Continue to cook until the eggs are softly scrambled, then season with salt and pepper. Remove from heat and serve.",
+            "Preheat your oven to 400°F (200°C) for the beacons.",
+            "Arrange the bacon slices on a baking sheet lined with parchment paper.",
+            "Bake for 15-20 minutes, or until the bacon is crispy.",
+            "Remove from the oven and drain on paper towels before serving.",
+            "Heat a skillet over medium heat for your breakfast sausages.",
+            "Add the sausages and cook, turning occasionally, until browned on all sides and cooked through, about 10-12 minutes.",
+            "Remove from heat and serve hot."
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Blueberry Pancakes",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXidmsHgY5Q3QOrje4ossd-k1ezl-b-NjK0Q&s",
+        "description": "Fluffy pancakes packed with fresh blueberries, perfect for a delicious morning treat.",
+        "ingredients": [
+            "1 cup all-purpose flour",
+            "1 tablespoon sugar",
+            "1 teaspoon baking powder",
+            "1/2 teaspoon baking soda",
+            "1/4 teaspoon salt",
+            "1 cup buttermilk",
+            "1 egg",
+            "2 tablespoons melted butter",
+            "1 cup fresh blueberries"
+        ],
+        "directions": [
+            "In a bowl, mix flour, sugar, baking powder, baking soda, and salt.",
+            "Whisk buttermilk, egg, and melted butter together in another bowl.",
+            "Pour the wet ingredients into the dry ingredients and stir until just combined.",
+            "Fold in blueberries.",
+            "Heat a griddle or skillet over medium heat and lightly grease it.",
+            "Pour batter onto the griddle and cook until bubbles form on the surface, then flip and cook until golden brown."
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Avocado Toast with Egg",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTONaWfLI5B44HWhKGQ8UnFY2C_H7oPjvxqVg&s",
+        "description": "A simple and healthy breakfast option featuring creamy avocado and a perfectly cooked egg.",
+        "ingredients": [
+            "1 ripe avocado",
+            "2 slices of whole-grain bread, toasted",
+            "1 tablespoon olive oil",
+            "Salt and pepper to taste",
+            "2 large eggs"
+        ],
+        "directions": [
+            "Mash the avocado in a bowl and season with salt and pepper.",
+            "Spread the avocado on the toasted bread slices.",
+            "Heat olive oil in a skillet over medium heat and cook the eggs to your liking (fried or poached).",
+            "Place the cooked eggs on top of the avocado toast and serve immediately."
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Banana Oatmeal",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY8Mt4-bsvb5j64TBY-Pakj7WOrrxdVQl14g&s",
+        "description": "A hearty and nutritious oatmeal breakfast sweetened with ripe bananas.",
+        "ingredients": [
+            "1 cup rolled oats",
+            "2 cups milk or water",
+            "1 ripe banana, mashed",
+            "1 tablespoon honey",
+            "1/2 teaspoon ground cinnamon",
+            "1/4 teaspoon salt",
+            "1 tablespoon chopped nuts (optional)"
+        ],
+        "directions": [
+            "In a saucepan, bring milk or water to a boil.",
+            "Stir in oats, mashed banana, cinnamon, and salt.",
+            "Reduce heat and simmer, stirring occasionally, until oats are tender and the mixture is thickened.",
+            "Stir in honey and top with chopped nuts if desired."
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Spinach and Feta Omelette",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6cMH8vJxIqTnVXAL-qmzzuIlmjZ_YW_waw&s",
+        "description": "A light and flavorful omelette filled with fresh spinach and tangy feta cheese.",
+        "ingredients": [
+            "3 large eggs",
+            "1/4 cup fresh spinach, chopped",
+            "2 tablespoons crumbled feta cheese",
+            "Salt and pepper to taste",
+            "1 tablespoon butter"
+        ],
+        "directions": [
+            "Whisk eggs in a bowl and season with salt and pepper.",
+            "Heat butter in a non-stick skillet over medium heat.",
+            "Pour the eggs into the skillet and cook until they begin to set.",
+            "Sprinkle spinach and feta cheese over one half of the omelette.",
+            "Fold the omelette in half and cook for an additional minute until the spinach is wilted and the cheese is melted."
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Greek Yogurt Parfait",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRerrE9aG8qprE2R67J2i7iS6hnOOtuTCnJw&s",
+        "description": "A quick and healthy breakfast option layered with Greek yogurt, fresh berries, and granola.",
+        "ingredients": [
+            "1 cup Greek yogurt",
+            "1/2 cup fresh berries (blueberries, strawberries, or raspberries)",
+            "1/4 cup granola",
+            "1 tablespoon honey"
+        ],
+        "directions": [
+            "In a glass or bowl, layer half of the yogurt, followed by half of the berries and granola.",
+            "Repeat the layers with the remaining yogurt, berries, and granola.",
+            "Drizzle honey on top and serve immediately."
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Sweet Potato Hash",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY2XzF15VFGSYTVVfju6_gGQzRxIC876IL_w&s",
+        "description": "A savory breakfast hash made with sweet potatoes, bell peppers, and onions.",
+        "ingredients": [
+            "2 medium sweet potatoes, peeled and diced",
+            "1 red bell pepper, diced",
+            "1 green bell pepper, diced",
+            "1 small onion, chopped",
+            "2 tablespoons olive oil",
+            "Salt and pepper to taste",
+            "2 large eggs (optional)"
+        ],
+        "directions": [
+            "Heat olive oil in a large skillet over medium heat.",
+            "Add sweet potatoes, bell peppers, and onion, and season with salt and pepper.",
+            "Cook, stirring occasionally, until the vegetables are tender and lightly browned, about 15-20 minutes.",
+            "If desired, fry eggs in a separate skillet and serve on top of the hash."
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Eggs Benedict",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW-Q4LVGmRmNNh8zzVxtGRxQMb0PcYo6H4rw&s",
+        "description": "A classic breakfast dish featuring poached eggs, Canadian bacon, and hollandaise sauce on an English muffin.",
+        "ingredients": [
+            "4 large eggs",
+            "2 English muffins, split and toasted",
+            "4 slices Canadian bacon",
+            "1/2 cup hollandaise sauce (store-bought or homemade)",
+            "1 tablespoon white vinegar",
+            "Chopped chives for garnish (optional)"
+        ],
+        "directions": [
+            "Fill a large saucepan with water and add vinegar. Bring to a gentle simmer.",
+            "Crack eggs into small bowls, then gently slide them into the simmering water.",
+            "Cook eggs for 3-4 minutes, or until whites are set but yolks are still runny.",
+            "Meanwhile, cook Canadian bacon in a skillet over medium heat until browned.",
+            "Place a slice of Canadian bacon on each English muffin half, followed by a poached egg.",
+            "Spoon hollandaise sauce over the eggs and garnish with chives if desired."
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Chocolate Raspberry Blintzes",
+        "img": "https://www.allrecipes.com/thmb/B01QfGNWdVNbGHeu77TfCXWb72o=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/6400939-cc4f57aaa6884606a19ab1d1b37703ff.jpg",
+        "description": "It's a minor adjustment to the cheese blintzes located on the website. Sour cream complements the blintzes for dipping.",
+        "ingredients": [
+            "1 (8 ounce) package cream cheese, softened",
+            "⅓ (13 ounce) jar chocolate-hazelnut spread (such as Nutella®)",
+            "½ (8 ounce) package mixed berry cream cheese, softened",
+            "1 tablespoon milk",
+            "2 teaspoons vanilla extract",
+            "½ cup butter, melted",
+            "1 cup white sugar",
+            "2 tablespoons ground cinnamon",
+            "1 loaf sliced white bread, crusts removed"
+        ],
+        "directions": [
+            "Preheat oven to 350 degrees F (175 degrees C).",
+            "Mix cream cheese, chocolate-hazelnut spread, berry cream cheese, milk, and vanilla extract together in a bowl.",
+            "Pour melted butter into a shallow bowl.",
+            "Combine sugar and cinnamon in a separate shallow bowl.",
+            "Flatten bread slices out on a work surface. Spread cream cheese mixture over each slice. Roll up each slice. Dip rolls in melted butter; coat with cinnamon sugar. Arrange seam-side down in a baking dish.",
+            "Bake in the preheated oven until lightly golden, 15 to 20 minutes."
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Strawberry Banana Smoothie Bowl",
+        "img": "data:image/jpeg;base64,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",
+        "description": "A refreshing and healthy smoothie bowl topped with fresh fruits and granola.",
+        "ingredients": [
+            "1 frozen banana",
+            "1/2 cup frozen strawberries",
+            "1/2 cup Greek yogurt",
+            "1/4 cup milk",
+            "1 tablespoon honey",
+            "Fresh berries, sliced banana, granola, and chia seeds for topping"
+        ],
+        "directions": [
+            "In a blender, combine frozen banana, frozen strawberries, Greek yogurt, milk, and honey. Blend until smooth.",
+            "Pour the smoothie into a bowl.",
+            "Top with fresh berries, sliced banana, granola, and chia seeds."
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Breakfast Burrito",
+        "img": "https://www.allrecipes.com/thmb/W_DBTjUHW1W0uOYuM9bnMRINOS4=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/214583-SouthwestBreakfastBurritos-ddmfs-3x4-8401-156c7c8d657a4a5d9f3f393146fdafc3.jpg",
+        "description": "A filling breakfast burrito stuffed with eggs, cheese, and your choice of sausage or bacon.",
+        "ingredients": [
+            "4 large eggs",
+            "1/4 cup shredded cheddar cheese",
+            "2 flour tortillas",
+            "4 slices of cooked bacon or 2 cooked sausages, crumbled",
+            "Salt and pepper to taste",
+            "1/2 cup salsa (optional)"
+        ],
+        "directions": [
+            "Scramble the eggs in a skillet over medium heat. Season with salt and pepper.",
+            "Warm the tortillas in a separate skillet or microwave.",
+            "Divide the scrambled eggs between the tortillas, top with cheese, crumbled bacon or sausage, and salsa if desired.",
+            "Roll up the tortillas to enclose the filling and serve."
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Apple Cinnamon Overnight Oats",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZc-m6W7ydutdhUguOvzWxdgRtK987Bkpraw&s",
+        "description": "A quick and easy breakfast made the night before, featuring oats, apples, and cinnamon.",
+        "ingredients": [
+            "1/2 cup rolled oats",
+            "1/2 cup milk",
+            "1/4 cup unsweetened applesauce",
+            "1/2 teaspoon ground cinnamon",
+            "1 teaspoon honey",
+            "1/4 cup chopped apples",
+            "1 tablespoon chopped nuts (optional)"
+        ],
+        "directions": [
+            "In a jar or bowl, combine oats, milk, applesauce, cinnamon, and honey.",
+            "Stir well, cover, and refrigerate overnight.",
+            "In the morning, top with chopped apples and nuts before serving."
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Ham and Cheese Croissant Sandwich",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUWxCw4FhrWMRHD9Z3toavT6SQgmHsghg_1g&s",
+        "description": "A warm, flaky croissant filled with ham, melted cheese, and scrambled eggs.",
+        "ingredients": [
+            "2 croissants, sliced in half",
+            "4 slices of ham",
+            "2 slices of Swiss or cheddar cheese",
+            "2 large eggs, scrambled",
+            "1 tablespoon butter"
+        ],
+        "directions": [
+            "Preheat oven to 350 degrees F (175 degrees C).",
+            "Melt butter in a skillet over medium heat and scramble the eggs.",
+            "Place ham and cheese slices on the bottom halves of the croissants.",
+            "Top with scrambled eggs and place the croissant tops over the filling.",
+            "Bake in the preheated oven until the cheese is melted, about 5 minutes."
+        ]
     }
 ]

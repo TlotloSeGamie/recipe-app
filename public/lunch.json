@@ -2,7 +2,7 @@
     {
         "id":1,
         "name":"Spinach and Pistachio Quiche",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92YD04hkWpCVKL8sg_6WeIpRvEd5XvDTVWA&s",
+        "img":"https://www.skinnytaste.com/wp-content/uploads/2020/11/Sausage-and-Spinach-Quiche-6.jpg",
         "description":"Summer is in the air and the holidays are just around the corner. The quickest and easiest way to feed a crowd of people is a quiche or savoury tart. Why not try this delicious combination of spinach and pistachio. It works well together along with the goats cheese and feta",
         "ingredients":[
             "250 g cake flour",
@@ -26,6 +26,153 @@
             "Form into a ball or roll into a rectangle. Cover and rest for at least 1 hour or until ready to use. You can freeze too. This quantity will be enough for 2 x 22cm (230g ea) pie dishes of 1 x 20cm (180g) and 1 x 27cm (280g)pie dishes",
             "When ready to bake preheat oven to 200℃. Roll out pastry on floured work surface. Lift the pastry with the rolling pin and roll over dish to line your chosen buttered dish with the quantity required for that dish as indicated above. Press dough into dish. Add a sheet of baking paper on top the dough and fill the dish with baking beans. Bake blind for 20 minutes.",
             "Remove baking beans and let the case cool to room temperature before filling. Once cooled brush the pastry case with the egg white ."
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Grilled Chicken Caesar Wrap",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSErDduR1GwO-E3O4GHyp8Cago1jd2-dkkufw&s",
+        "description": "A delicious wrap filled with grilled chicken, romaine lettuce, Parmesan cheese, and Caesar dressing.",
+        "ingredients": [
+            "2 grilled chicken breasts, sliced",
+            "2 cups romaine lettuce, chopped",
+            "1/4 cup Parmesan cheese, shredded",
+            "4 tablespoons Caesar dressing",
+            "4 large tortillas"
+        ],
+        "directions": [
+            "In a bowl, mix the lettuce, Parmesan cheese, and Caesar dressing.",
+            "Place a portion of the grilled chicken slices in the center of each tortilla.",
+            "Top with the lettuce mixture.",
+            "Wrap the tortillas tightly and serve."
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Vegetable Stir-Fry with Tofu",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiZ4CPMTqUAeXqupsTxTlP_bXWqw0nHH1w-w&s",
+        "description": "A healthy stir-fry dish packed with colorful vegetables and tofu in a savory sauce.",
+        "ingredients": [
+            "1 block firm tofu, cubed",
+            "1 red bell pepper, sliced",
+            "1 yellow bell pepper, sliced",
+            "1 zucchini, sliced",
+            "1 cup broccoli florets",
+            "2 tablespoons soy sauce",
+            "1 tablespoon olive oil",
+            "2 teaspoons cornstarch"
+        ],
+        "directions": [
+            "Heat olive oil in a large skillet over medium heat.",
+            "Add the tofu and cook until golden brown, about 5 minutes.",
+            "Add the vegetables and stir-fry for another 5 minutes.",
+            "Mix soy sauce with cornstarch and add to the skillet.",
+            "Cook until the sauce thickens and coats the vegetables and tofu.",
+            "Serve hot with rice or noodles."
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Turkey Avocado Sandwich",
+        "img": "https://i0.wp.com/yourchoicenutrition.com/wp-content/uploads/2016/10/Hot-Turkey-and-Avocado-Sandwiches-3.1.jpg?fit=768%2C514&ssl=1",
+        "description": "A fresh and filling sandwich with sliced turkey, avocado, and crispy lettuce.",
+        "ingredients": [
+            "8 slices of whole wheat bread",
+            "1/2 lb sliced turkey breast",
+            "1 avocado, sliced",
+            "4 leaves of lettuce",
+            "4 slices of tomato",
+            "4 slices of cheese (optional)",
+            "Mayonnaise (optional)"
+        ],
+        "directions": [
+            "Spread mayonnaise on the bread slices if using.",
+            "Layer turkey, avocado, lettuce, tomato, and cheese on half of the bread slices.",
+            "Top with the remaining bread slices to form sandwiches.",
+            "Cut in half and serve."
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Quinoa Salad with Roasted Vegetables",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCnn-bCylUjSUB6Ng3na_CgaOWbyI99x23ow&s",
+        "description": "A nutritious quinoa salad with roasted vegetables, perfect for a light lunch.",
+        "ingredients": [
+            "1 cup quinoa",
+            "2 cups water",
+            "1 red bell pepper, diced",
+            "1 yellow bell pepper, diced",
+            "1 zucchini, diced",
+            "1/2 cup feta cheese, crumbled",
+            "2 tablespoons olive oil",
+            "Salt and pepper to taste"
+        ],
+        "directions": [
+            "Preheat oven to 400°F (200°C).",
+            "Cook quinoa in water according to package instructions.",
+            "Toss diced vegetables with olive oil, salt, and pepper, and roast for 20 minutes.",
+            "Mix the cooked quinoa with the roasted vegetables and feta cheese.",
+            "Serve warm or cold."
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Chicken Pesto Pasta",
+        "img": "https://www.allrecipes.com/thmb/Q-TjrQCoXYXtS_oSmrml5fFw4Fg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/4581459-Chicken-Pesto-Pasta_4x3-1-0c3fa16bd8f44643aa8a26c9150675ff.jpg",
+        "description": "A quick and easy pasta dish with chicken, pesto, and cherry tomatoes.",
+        "ingredients": [
+            "2 cups cooked pasta",
+            "1 cup cooked chicken breast, sliced",
+            "1/2 cup pesto sauce",
+            "1/2 cup cherry tomatoes, halved",
+            "2 tablespoons Parmesan cheese, grated"
+        ],
+        "directions": [
+            "Cook pasta according to package instructions.",
+            "In a large skillet, heat the chicken and pesto sauce.",
+            "Add the cooked pasta and cherry tomatoes to the skillet and mix well.",
+            "Top with Parmesan cheese and serve."
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Beef and Bean Burritos",
+        "img": "https://www.allrecipes.com/thmb/A6KLOBL2RaD_vGpZoxXkmk0OsDo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/4565428-Beef-and-Bean-Burritos-mfs-1x1-1-c640e72ebc57436e9360014942704db3.jpg",
+        "description": "A hearty and filling burrito stuffed with ground beef, beans, and cheese.",
+        "ingredients": [
+            "1 lb ground beef",
+            "1 can black beans, drained and rinsed",
+            "1 cup shredded cheese",
+            "4 large tortillas",
+            "1 cup salsa",
+            "1/2 cup sour cream"
+        ],
+        "directions": [
+            "Cook ground beef in a skillet over medium heat until browned.",
+            "Add the black beans and cook until heated through.",
+            "Place a portion of the beef and bean mixture in the center of each tortilla.",
+            "Top with cheese and salsa, then roll up the tortillas.",
+            "Serve with sour cream."
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Caprese Panini",
+        "img": "https://www.allrecipes.com/thmb/JqZre4vlbLsTxTfhjrWxtxYFqBs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/20215_Caprese_Panini_1x1_003-c255b0586dbb4c3ca49c1de6f31732b8.jpg",
+        "description": "A classic Italian sandwich with mozzarella, tomatoes, and basil.",
+        "ingredients": [
+            "4 ciabatta rolls",
+            "8 slices of fresh mozzarella",
+            "2 tomatoes, sliced",
+            "1/4 cup fresh basil leaves",
+            "2 tablespoons balsamic glaze"
+        ],
+        "directions": [
+            "Preheat a panini press or grill pan.",
+            "Assemble the sandwiches by layering mozzarella, tomato slices, and basil leaves on ciabatta rolls.",
+            "Drizzle with balsamic glaze.",
+            "Grill until the cheese is melted and the bread is toasted.",
+            "Serve hot."
         ]
     }
 ]

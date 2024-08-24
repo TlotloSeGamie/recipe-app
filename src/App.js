@@ -3,12 +3,12 @@ import './App.css';
 import Navbar from "./navbar";
 import Home from "./home";
 import Breakfast from "./breakfast";
-import Recipes from "./recipes";
 import Lunch from "./lunch";
 import Dinner from "./dinner";
 import Login from "./login";
 import Register from "./register";
 import Profile from "./profile";
+import Sandwich from "./sandwich";
 
 const App = () => {
   const [currentSection, setCurrentSection] = useState(() => {
@@ -59,7 +59,7 @@ const App = () => {
         ) : (
           <div>
             {!currentForm && currentSection === 'breakfast' && <Breakfast selectedMenu="breakfast" goHome={() => handleMenuClick('home')} />}
-            {!currentForm && currentSection === 'sandwich' && <Recipes selectedMenu="sandwich" goHome={() => handleMenuClick('home')} />}
+            {!currentForm && currentSection === 'sandwich' && <Sandwich selectedMenu="sandwich" goHome={() => handleMenuClick('home')} />}
             {!currentForm && currentSection === 'lunch' && <Lunch selectedMenu="lunch" goHome={() => handleMenuClick('home')} />}
             {!currentForm && currentSection === 'dinner' && <Dinner selectedMenu="dinner" goHome={() => handleMenuClick('home')} />}
             {!currentForm && currentSection === 'home' && <Home />}
@@ -68,7 +68,7 @@ const App = () => {
       ) : (
         <div>
           {!currentForm && currentSection === 'breakfast' && <Breakfast selectedMenu="breakfast" goHome={() => handleMenuClick('home')} />}
-          {!currentForm && currentSection === 'sandwich' && <Recipes selectedMenu="sandwich" goHome={() => handleMenuClick('home')} />}
+          {!currentForm && currentSection === 'sandwich' && <Sandwich selectedMenu="sandwich" goHome={() => handleMenuClick('home')} />}
           {!currentForm && currentSection === 'lunch' && <Lunch selectedMenu="lunch" goHome={() => handleMenuClick('home')} />}
           {!currentForm && currentSection === 'dinner' && <Dinner selectedMenu="dinner" goHome={() => handleMenuClick('home')} />}
           {!currentForm && currentSection === 'home' && <Home />}
