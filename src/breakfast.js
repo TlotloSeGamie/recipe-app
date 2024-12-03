@@ -159,9 +159,11 @@ const Breakfast = ({ selectedMenu, goHome }) => {
                             </div>
                             <div className="recipe-info">
                                 <h3 className="recipe-name">{item.name}</h3>
-                                <p className="recipe-description">{item.description}</p>
+                                <p className="recipe-description">{item.description.slice(0, 250)} ......</p>
                                 <div className="recipe-actions">
                                     <button className="view-button" onClick={(e) => { e.stopPropagation(); handleViewClick(item); }}>View</button>
+                                    <button className="edit">Edit</button>
+                                    <button className="delete">Delete</button>
                                     {item.isLocal && (
                                         <>
                                             <button className="edit-button" onClick={(e) => { e.stopPropagation(); handleEditClick(item); }}>Edit</button>
@@ -180,7 +182,7 @@ const Breakfast = ({ selectedMenu, goHome }) => {
             {selectedRecipe && (
                 <div className="modal">
                     <div className="modal-content">
-                        <span className="close" onClick={closeModal}>&times;</span>
+                        <span className="close" onClick={closeModal}>&times;</span> 
                         <h2>{selectedRecipe.name}</h2>
                         <img src={selectedRecipe.img} alt={selectedRecipe.name} />
                         <p>{selectedRecipe.description}</p>

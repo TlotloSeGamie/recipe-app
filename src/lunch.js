@@ -159,7 +159,7 @@ const Lunch = ({ selectedMenu, goHome }) => {
                             </div>
                             <div className="recipe-info">
                                 <h3 className="recipe-name">{item.name}</h3>
-                                <p className="recipe-description">{item.description}</p>
+                                <p className="recipe-description">{item.description.slice(0, 150)}......</p>
                                 <div className="recipe-actions">
                                     <button className="view-button" onClick={(e) => { e.stopPropagation(); handleViewClick(item); }}>View</button>
                                     {item.isLocal && (

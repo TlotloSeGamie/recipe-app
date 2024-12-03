@@ -1,11 +1,12 @@
 import React from "react";
 import "./Profile.css";
 
-const Profile = ({ user, onLogout, isOpen, onClose }) => {
+const Profile = ({ user, onLogout, isOpen, onClose, profileOpen, setProfileOpen }) => {
   if (!isOpen) return null;
 
+  
   const toggleProfile = () => {
-    console.log("Profile clicked!"); // This should log when the user icon is clicked
+    console.log("Profile clicked!"); 
     setProfileOpen(!profileOpen);
   };
 

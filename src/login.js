@@ -43,8 +43,8 @@ const Login = ({ onFormSwitch, onClose, onLogin }) => {
         const user = users.find(user => user.email === formData.email && user.password === formData.password);
 
         if (user) {
-            onLogin(user); // Pass the user data to the parent component
-            window.location.href = '/'; // Redirect to home page
+            onLogin(user); 
+            window.location.href = '/';
         } else {
             setErrors({ form: 'Invalid email or password' });
         }
