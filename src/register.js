@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2"; 
 import './Form.css';
 
 const Register = ({ onFormSwitch, onClose }) => {
@@ -61,8 +62,21 @@ const Register = ({ onFormSwitch, onClose }) => {
 
             localStorage.setItem('users', JSON.stringify(users));
 
-            alert("Registered Successfully");
-            onFormSwitch('login');
+            Swal.fire({
+                title: 'Success!',
+                text: 'Registered Successfully',
+                icon: 'success',
+                confirmButtonText: 'OK',
+            }).then(() => {
+                onFormSwitch('login');
+            });
+        } else {
+            Swal.fire({
+                title: 'Error!',
+                text: 'Please fix the errors before submitting',
+                icon: 'error',
+                confirmButtonText: 'OK',
+            });
         }
     };
 
@@ -83,7 +97,7 @@ const Register = ({ onFormSwitch, onClose }) => {
                             required
                         />
                         {errors.username && <span className="error">{errors.username}</span>}
-                
+
                         <label htmlFor="email">Email</label>
                         <input
                             type="email"
@@ -94,7 +108,7 @@ const Register = ({ onFormSwitch, onClose }) => {
                             required
                         />
                         {errors.email && <span className="error">{errors.email}</span>}
-                
+
                         <label htmlFor="password">Password</label>
                         <input
                             type="password"
@@ -105,7 +119,7 @@ const Register = ({ onFormSwitch, onClose }) => {
                             required
                         />
                         {errors.password && <span className="error">{errors.password}</span>}
-                
+
                         <label htmlFor="confirmPassword">Confirm Password</label>
                         <input
                             type="password"
@@ -116,7 +130,7 @@ const Register = ({ onFormSwitch, onClose }) => {
                             required
                         />
                         {errors.confirmPassword && <span className="error">{errors.confirmPassword}</span>}
-                
+
                         <button type="submit" className="submit-btn">Submit</button>
                         <p className="signup-text">Already have an account? <a href="#" className="login-link-home" onClick={() => onFormSwitch('login')}>Login</a></p>
                     </form>

@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Home.css";
 
-
 const Home = ({ currentForm, switchForm }) => {
   const [allRecipes, setAllRecipes] = useState([]);
   const [shuffledRecipes, setShuffledRecipes] = useState([]);
+  const [selectedRecipe, setSelectedRecipe] = useState(null); 
   const loggedInUser = localStorage.getItem('loggedInUser');
 
   useEffect(() => {
@@ -36,7 +36,6 @@ const Home = ({ currentForm, switchForm }) => {
         }
 
         const combinedRecipes = [...userRecipes, ...apiRecipes];
-
         const shuffled = shuffleArray(combinedRecipes);
         setAllRecipes(combinedRecipes);
         setShuffledRecipes(shuffled);
@@ -57,6 +56,14 @@ const Home = ({ currentForm, switchForm }) => {
     return shuffledArray;
   };
 
+  const handleViewClick = (item) => {
+    setSelectedRecipe(item);
+  };
+
+  const closeModal = () => {
+    setSelectedRecipe(null);
+  };
+
   return (
     <div>
       <div className="random-recipes-container">
@@ -71,6 +78,9 @@ const Home = ({ currentForm, switchForm }) => {
                 <div className="recipe-info">
                   <h3 className="recipe-name">{item.name}</h3>
                   <p className="recipe-description">{item.description.slice(0, 150)} ......</p>
+                  <button className="view-button" onClick={() => handleViewClick(item)}>
+                    View
+                  </button>
                 </div>
               </div>
             ))
@@ -79,6 +89,29 @@ const Home = ({ currentForm, switchForm }) => {
           )}
         </div>
       </div>
+
+      {selectedRecipe && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={closeModal}>&times;</span>
+            <h2>{selectedRecipe.name}</h2>
+            <img src={selectedRecipe.img} alt={selectedRecipe.name} />
+            <p>{selectedRecipe.description}</p>
+            <h3>Ingredients</h3>
+            <ul>
+              {selectedRecipe.ingredients.map((ingredient, index) => (
+                <li key={index}>{ingredient}</li>
+              ))}
+            </ul>
+            <h3>Directions</h3>
+            <ul>
+              {selectedRecipe.directions.map((direction, index) => (
+                <li key={index}>{direction}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

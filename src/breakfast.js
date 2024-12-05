@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Swal from "sweetalert2"; 
 import "./Recipes.css";
 import AddRecipeForm from "./AddRecipeForm";
+import { FaEdit, FaTrashAlt } from "react-icons/fa";
+import Navbar from "./navbar";
 
 const Breakfast = ({ selectedMenu, goHome }) => {
     const [recipeItems, setRecipeItems] = useState({
@@ -26,16 +29,16 @@ const Breakfast = ({ selectedMenu, goHome }) => {
                     dinner: [],
                     sandwich: []
                 };
-    
+
                 const userRecipes = {
                     breakfast: storedRecipes.breakfast.filter(recipe => recipe.userId === loggedInUser),
                     lunch: storedRecipes.lunch.filter(recipe => recipe.userId === loggedInUser),
                     dinner: storedRecipes.dinner.filter(recipe => recipe.userId === loggedInUser),
                     sandwich: storedRecipes.sandwich.filter(recipe => recipe.userId === loggedInUser)
                 };
-    
+
                 setRecipeItems(userRecipes);
-    
+
                 try {
                     const response = await axios.get(`/${selectedMenu}.json`);
                     if (Array.isArray(response.data)) {
@@ -58,7 +61,6 @@ const Breakfast = ({ selectedMenu, goHome }) => {
                 }
             }
         };
-    
         fetchRecipes();
     }, [selectedMenu, loggedInUser]);
     
@@ -88,17 +90,32 @@ const Breakfast = ({ selectedMenu, goHome }) => {
     };
 
     const deleteRecipe = (id, category) => {
-        const confirmDelete = window.confirm("Are you sure you want to delete this recipe?");
-        if (confirmDelete) {
-            setRecipeItems(prevState => {
-                const updatedRecipes = {
-                    ...prevState,
-                    [category]: prevState[category].filter(recipe => recipe.id !== id)
-                };
-                localStorage.setItem('recipes', JSON.stringify(updatedRecipes));
-                return updatedRecipes;
-            });
-        }
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "Do you want to delete this recipe?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                setRecipeItems(prevState => {
+                    const updatedRecipes = {
+                        ...prevState,
+                        [category]: prevState[category].filter(recipe => recipe.id !== id)
+                    };
+                    localStorage.setItem('recipes', JSON.stringify(updatedRecipes));
+                    return updatedRecipes;
+                });
+
+                Swal.fire(
+                    'Deleted!',
+                    'Your recipe has been deleted.',
+                    'success'
+                );
+            }
+        });
     };
 
     const handleViewClick = (item) => {
@@ -153,7 +170,11 @@ const Breakfast = ({ selectedMenu, goHome }) => {
             {filteredRecipes && filteredRecipes.length > 0 ? (
                 <div className="recipe-grid">
                     {filteredRecipes.map(item => (
-                        <div key={item.id} className="recipe-card" onClick={() => handleViewClick(item)}>
+                        <div
+                            key={item.id}
+                            className="recipe-card"
+                            onClick={() => handleViewClick(item)} 
+                        >
                             <div className="recipe-img-container">
                                 <img src={item.img} alt={item.name} />
                             </div>
@@ -161,15 +182,31 @@ const Breakfast = ({ selectedMenu, goHome }) => {
                                 <h3 className="recipe-name">{item.name}</h3>
                                 <p className="recipe-description">{item.description.slice(0, 250)} ......</p>
                                 <div className="recipe-actions">
-                                    <button className="view-button" onClick={(e) => { e.stopPropagation(); handleViewClick(item); }}>View</button>
-                                    <button className="edit">Edit</button>
-                                    <button className="delete">Delete</button>
-                                    {item.isLocal && (
-                                        <>
-                                            <button className="edit-button" onClick={(e) => { e.stopPropagation(); handleEditClick(item); }}>Edit</button>
-                                            <button className="delete-button" onClick={(e) => { e.stopPropagation(); handleDeleteClick(item.id, selectedMenu); }}>Delete</button>
-                                        </>
-                                    )}
+                                    <button
+                                        className="view-button"
+                                        onClick={(e) => {
+                                            e.stopPropagation(); 
+                                            handleViewClick(item);
+                                        }}
+                                    >
+                                        View
+                                    </button>
+                                    <div className="icons">
+                                        <FaEdit
+                                            className="edit-icon"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                handleEditClick(item);
+                                            }}
+                                        />
+                                        <FaTrashAlt
+                                            className="delete-icon"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                handleDeleteClick(item.id, selectedMenu);
+                                            }}
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -57,12 +57,23 @@ const Navbar = ({ onMenuClick, switchForm, loggedInUser, onLogout }) => {
           <li><a href="#" onClick={() => { onMenuClick('sandwich'); toggleMenu(); }}>SANDWICH</a></li>
         </ul>
         <div className="bordered-box"></div>
+        <div className='privacy'></div>
         <div className='social'>
-          <i className="ri-facebook-fill"></i>
-          <i className="ri-twitter-x-fill"></i>
-          <i className="ri-instagram-fill"></i>
-          <i className="ri-pinterest-fill"></i>
-          <i className="ri-youtube-fill"></i>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <i className="ri-facebook-fill"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <i className="ri-twitter-x-fill"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <i className="ri-instagram-fill"></i>
+          </a>
+          <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+            <i className="ri-pinterest-fill"></i>
+          </a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+            <i className="ri-youtube-fill"></i>
+          </a>
         </div>
       </div>
       {profileOpen && (

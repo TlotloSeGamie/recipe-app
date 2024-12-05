@@ -79,6 +79,22 @@ button {
     transition: background-color 0.3s;
 }
 
+.recipe-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    size: 10px;
+    margin: 10px;
+}
+
 .close {
     font-size: 24px; 
     font-weight: bold; 
@@ -265,4 +281,28 @@ button:hover {
 
 .home-button:hover, .add-recipe:hover {
     background-color: #ff6347; 
+}
+
+.icons {
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-icon, .delete-icon {
+    font-size: 2rem;  
+    color: #555; 
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s; 
+}
+
+.edit-icon:hover {
+    color: #007BFF;  
+    transform: scale(1.1);  
+}
+
+.delete-icon:hover {
+    color: #DC3545;  
+    transform: scale(1.1);  
 }
